@@ -1,0 +1,35 @@
+@import './_media_queries.scss';
+@import './_variables.scss';
+@import './_reset.scss';
+
+@import './components/_Navbar.scss';
+@import './components/_Section.scss';
+@import './components/_News.scss';
+
+.container{
+    padding:32px 20px;
+    width:100%;
+    max-width: $site-width;
+    margin:0 auto;
+    max-width: $site-width;
+}
+
+.btn{
+    font-size: 1rem;
+    background: $accent;
+    color: black;
+    padding: 6px 12px;
+    border: none;
+    border-radius: $border-radius;
+    transition: all 0.3s ease-out;
+
+    &.btn-lg{
+        font-size:1.5rem;
+        font-weight:bold;
+        padding: 12px 24px;
+    }
+
+    &:hover{
+        background: white;
+    }
+}

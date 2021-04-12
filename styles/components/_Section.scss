@@ -1,0 +1,11 @@
+.section{
+    margin-bottom: 32px;
+
+    &.center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

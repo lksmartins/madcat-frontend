@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:#eaeaea;
+    outline: none;
+}
+html, body{
+    padding:0;
+    margin:0 auto;
+    font-family: 'Roboto', 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    background: $background;
+    color:#eaeaea;
+    scroll-behavior: smooth;
+}
+input, textarea, button{
+    font-family: 'Roboto', 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+}
+@include media(">desktop") {
+
+    html, body{
+        font-size: 1.1rem;
+    }
+
+}
+a{
+    text-decoration:none;
+    transition: 0.3s;
+    cursor: pointer;
+    i{transition: 0.3s;}
+}
+a:hover{
+    color:$accent;
+    i{color:$accent;}
+}
+ul, li{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+    border: none;
+}
+
+@include media("<desktop") {
+
+    body{
+        padding-bottom: 50px;
+    }
+
+}
