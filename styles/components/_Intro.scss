@@ -3,7 +3,7 @@
     width: 100% !important;
 
     &.parallax{
-        height: calc(1080px - 27vw );
+        height: calc( 60vh );
         width: 100% !important;
         position: relative;
         background: transparent !important;
@@ -37,9 +37,31 @@
         }
         .robot{
             background: url('/assets/intro/parallax/robot.png') no-repeat;
-            background-position: 50% center !important;
-            z-index: 8;
+            background-position: center !important;
+            background-size: 85% !important;
+            z-index: 8;   
         }
+        /*
+        @media (min-width: 1920px) {
+            .logo{
+                background-size: 85% !important;
+            }
+            .robot{
+                background-position: 50% center !important;
+                background-size: 65% !important;
+            }  
+        }
+
+        @media (min-width: 2560px) {
+            .logo{
+                background-size: 70% !important;
+            }  
+            .robot{
+                background-position: 70% center !important;
+                background-size: 35% !important;
+            }  
+        }
+        */
     }
 
     
