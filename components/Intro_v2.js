@@ -59,7 +59,7 @@ export default function Intro(){
             
             <div className="frame parallax-item" data-speed="0" />
             <div className="logo parallax-item"  data-speed="80" />
-            <div className="robot parallax-item" data-speed="10" />
+            <div className="robot parallax-item" data-speed="40" />
             <div className="cards parallax-item" data-speed="50" />
             <div className="bg parallax-item"    data-speed="30" />
 
