@@ -1,7 +1,47 @@
 .intro{
 
     width: 100% !important;
-    text-align: center;
+
+    &.parallax{
+        height: calc(1080px - 27vw );
+        width: 100% !important;
+        position: relative;
+        background: transparent !important;
+        overflow: hidden !important;
+
+        .frame, .cards, .bg, .logo, .robot{
+            background-size: cover !important;
+            background-position: bottom center !important;
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute !important;
+            top: 0; left: 0;
+        }
+
+        .frame{
+            background: url('/assets/intro/parallax/frame.png') no-repeat;
+            z-index: 10;
+        }
+        .bg{
+            background: url('/assets/intro/parallax/bg.png') no-repeat;
+            z-index: 6;
+        }
+        .cards{
+            background: url('/assets/intro/parallax/cards.png') no-repeat;
+            z-index: 7;
+        }
+        .logo{
+            background: url('/assets/intro/parallax/logo.png') no-repeat;
+            background-position: top center !important;
+            z-index: 9;
+        }
+        .robot{
+            background: url('/assets/intro/parallax/robot.png') no-repeat;
+            z-index: 8;
+        }
+    }
+
+    
 
     .react-parallax-content{
 

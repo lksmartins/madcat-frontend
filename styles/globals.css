@@ -13,7 +13,7 @@ html, body {
   font-family: 'Roboto', 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 1rem;
-  background: #4C2968;
+  background: #0D0D0D;
   color: #eaeaea;
   scroll-behavior: smooth;
 }
@@ -122,7 +122,7 @@ button:focus {
 
 .navbar .navbar-items .infos .item i {
   margin-right: 6px;
-  color: #00A3FF;
+  color: #00f8ff;
 }
 
 .navbar .navbar-items .infos .item:nth-of-type(1) {
@@ -214,7 +214,7 @@ button:focus {
     text-align: center;
   }
   .navbar .navbar-items .nav-menu.active {
-    background: #00A3FF;
+    background: #00f8ff;
     left: 0;
     opacity: 1;
     -webkit-transition: all 0.3s ease;
@@ -241,7 +241,7 @@ button:focus {
     cursor: pointer;
   }
   .navbar .navbar-items .menu-icon i {
-    color: #00A3FF;
+    color: #00f8ff;
   }
 }
 
@@ -267,7 +267,50 @@ button:focus {
 
 .intro {
   width: 100% !important;
-  text-align: center;
+}
+
+.intro.parallax {
+  height: calc(1080px - 27vw);
+  width: 100% !important;
+  position: relative;
+  background: transparent !important;
+  overflow: hidden !important;
+}
+
+.intro.parallax .frame, .intro.parallax .cards, .intro.parallax .bg, .intro.parallax .logo, .intro.parallax .robot {
+  background-size: cover !important;
+  background-position: bottom center !important;
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
+
+.intro.parallax .frame {
+  background: url("/assets/intro/parallax/frame.png") no-repeat;
+  z-index: 10;
+}
+
+.intro.parallax .bg {
+  background: url("/assets/intro/parallax/bg.png") no-repeat;
+  z-index: 6;
+}
+
+.intro.parallax .cards {
+  background: url("/assets/intro/parallax/cards.png") no-repeat;
+  z-index: 7;
+}
+
+.intro.parallax .logo {
+  background: url("/assets/intro/parallax/logo.png") no-repeat;
+  background-position: top center !important;
+  z-index: 9;
+}
+
+.intro.parallax .robot {
+  background: url("/assets/intro/parallax/robot.png") no-repeat;
+  z-index: 8;
 }
 
 .intro .react-parallax-content {
@@ -330,11 +373,12 @@ button:focus {
 
 .btn {
   font-size: 1rem;
-  background: #EFA409;
-  color: black;
+  background: url("/assets/hexagon-bg.png") repeat center center;
+  color: #00f8ff;
   padding: 6px 12px;
-  border: none;
-  border-radius: 20px;
+  border: 2px solid #00f8ff;
+  -webkit-box-shadow: 0 0 1rem #00f8ff;
+          box-shadow: 0 0 1rem #00f8ff;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -346,6 +390,7 @@ button:focus {
 }
 
 .btn:hover {
-  background: white;
+  background: #00f8ff;
+  color: #0D0D0D;
 }
 /*# sourceMappingURL=globals.css.map */

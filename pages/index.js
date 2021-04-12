@@ -1,5 +1,5 @@
 import Section from '../components/Section'
-import Intro from '../components/Intro'
+import Intro from '../components/Intro_v2'
 import News from '../components/News'
 
 export default function Index() {

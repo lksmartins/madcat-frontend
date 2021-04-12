@@ -17,11 +17,11 @@
 
 .btn{
     font-size: 1rem;
-    background: $accent;
-    color: black;
+    background: url('/assets/hexagon-bg.png') repeat center center;
+    color: $blue;
     padding: 6px 12px;
-    border: none;
-    border-radius: $border-radius;
+    border: 2px solid $blue;
+    box-shadow: 0 0 1rem $blue;
     transition: all 0.3s ease-out;
 
     &.btn-lg{
@@ -31,6 +31,7 @@
     }
 
     &:hover{
-        background: white;
+        background: $blue;
+        color: $background;
     }
 }
