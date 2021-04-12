@@ -1,19 +1,14 @@
-import Image from 'next/image'
-
 import Section from '../components/Section'
+import Intro from '../components/Intro'
 import News from '../components/News'
 
 export default function Index() {
 
 	return (<div className="blue">
 
-        <div className="container">
+        <Intro />
 
-            <Section className="section center" id="intro">
-                <Image src="/assets/logo-color.png" width="398" height="328" />
-                <br/>
-                Wow factor
-            </Section>
+        <div className="container">   
 
             <Section className="section center">
                 <button className="btn btn-lg">Download</button>

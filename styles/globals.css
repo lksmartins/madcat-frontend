@@ -265,6 +265,28 @@ button:focus {
           align-items: center;
 }
 
+.intro {
+  width: 100% !important;
+  text-align: center;
+}
+
+.intro .react-parallax-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.intro .react-parallax-content .main-container {
+  margin-top: 60px;
+  position: relative;
+}
+
 .news {
   display: -webkit-box;
   display: -ms-flexbox;
