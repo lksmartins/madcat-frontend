@@ -6,6 +6,7 @@
 @import './components/_Section.scss';
 @import './components/_Intro.scss';
 @import './components/_Button.scss';
+@import './components/_Gallery.scss';
 @import './components/_News.scss';
 
 .container{
@@ -37,6 +38,11 @@
 }
 .mb-7{
     margin-bottom: 52px !important;
+}
+
+// HELPER
+.hidden{
+    display: none !important;
 }
 
 // IFRAME

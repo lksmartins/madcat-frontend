@@ -332,7 +332,7 @@ button:focus {
 .intro.parallax .robot {
   background: url("/assets/intro/parallax/robot.png") no-repeat;
   background-position: center !important;
-  background-size: 85% !important;
+  background-size: 95% !important;
   z-index: 8;
 }
 
@@ -398,6 +398,88 @@ to {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+.gallery-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery-overlay .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc( 100% - 19vw);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 5px 0;
+}
+
+.gallery-overlay .controls i {
+  cursor: pointer;
+}
+
+.gallery-overlay .main {
+  position: relative;
+}
+
+.gallery-overlay .main img {
+  width: 100%;
+  max-width: 80vw;
+  height: 100%;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 22px;
+}
+
+.gallery div {
+  -ms-flex-preferred-size: calc(50% - 22px);
+      flex-basis: calc(50% - 22px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.gallery div img {
+  width: 100%;
+  height: auto;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 .news {
@@ -467,6 +549,10 @@ to {
 
 .mb-7 {
   margin-bottom: 52px !important;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .fluid-media {
