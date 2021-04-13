@@ -22,7 +22,7 @@ export default function Index() {
                 </div>
             </Section>            
 
-            <Section className="section center mb-6">
+            <Section className="section center mb-7">
                 <h3 className="mb-2">Gallery</h3>
                 <Gallery />
             </Section>

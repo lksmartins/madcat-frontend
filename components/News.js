@@ -1,6 +1,26 @@
-import React from 'react';
+import React from 'react'
+
+export async function getStaticProps() {
+
+	const res = await fetch('https://chave-mestra.net/api/articles/index.php', {
+		method: 'POST',
+		body: JSON.stringify({ 
+			token: process.env.API_KEY, 
+			action: 'articles',
+			group_id: process.env.GROUP_ID
+		})
+	})
+
+	const response = await res.json()
+	
+	return {
+		props: {articles: response}
+	}
+}
 
 export default function News(props){
+
+	console.log('articles', props.articles)
 	
 	var newsElements = [
 		{title: 'Título Exemplo 1', content: 'lorem ipsum dolor sit amet...', img: 'http://www.firewatchgame.com/screenshots/firewatch-e3-2.jpg'},
