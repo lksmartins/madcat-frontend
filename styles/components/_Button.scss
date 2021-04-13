@@ -1,0 +1,43 @@
+/*
+@keyframes animated-border {
+from{
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.4);
+}
+to {
+    box-shadow: 0 0 0 20px rgba(255,255,255,0);
+}
+}
+
+.download {
+    animation: animated-border 1.5s linear infinite;
+    border: 2px solid;
+    padding: 15px;
+}
+*/
+
+.btn{
+    font-size: 1rem;
+    background: url('/assets/btn/hexagon-bg.png') repeat center center;
+    color: $blue;
+    padding: 6px 12px;
+    border: 2px solid $blue;
+    box-shadow: 0 0 1rem $blue;
+    transition: all 0.3s ease-out;
+
+    &.btn-lg{
+        font-size:1.5rem;
+        font-weight:bold;
+        padding: 12px 24px;
+    }
+
+    &:hover{
+        background: $blue;
+        color: $background;
+    }
+}
+
+.download-btn{
+    position: relative;
+    padding: 10px 0;
+    height: max-content;
+}

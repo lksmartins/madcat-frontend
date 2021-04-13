@@ -3,13 +3,13 @@
     width: 100% !important;
 
     &.parallax{
-        height: calc( 60vh );
+        height: 80vh;
         width: 100% !important;
         position: relative;
         background: transparent !important;
         overflow: hidden !important;
 
-        .frame, .cards, .bg, .logo, .robot{
+        .parallax-item{
             background-size: cover !important;
             background-position: bottom center !important;
             height: 100% !important;

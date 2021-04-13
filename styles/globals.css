@@ -270,7 +270,7 @@ button:focus {
 }
 
 .intro.parallax {
-  height: calc( 60vh);
+  height: 80vh;
   width: 100% !important;
   position: relative;
   background: transparent !important;
@@ -298,7 +298,7 @@ button:focus {
         */
 }
 
-.intro.parallax .frame, .intro.parallax .cards, .intro.parallax .bg, .intro.parallax .logo, .intro.parallax .robot {
+.intro.parallax .parallax-item {
   background-size: cover !important;
   background-position: bottom center !important;
   height: 100% !important;
@@ -353,6 +353,53 @@ button:focus {
   position: relative;
 }
 
+/*
+@keyframes animated-border {
+from{
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.4);
+}
+to {
+    box-shadow: 0 0 0 20px rgba(255,255,255,0);
+}
+}
+
+.download {
+    animation: animated-border 1.5s linear infinite;
+    border: 2px solid;
+    padding: 15px;
+}
+*/
+.btn {
+  font-size: 1rem;
+  background: url("/assets/btn/hexagon-bg.png") repeat center center;
+  color: #00f8ff;
+  padding: 6px 12px;
+  border: 2px solid #00f8ff;
+  -webkit-box-shadow: 0 0 1rem #00f8ff;
+          box-shadow: 0 0 1rem #00f8ff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn.btn-lg {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 12px 24px;
+}
+
+.btn:hover {
+  background: #00f8ff;
+  color: #0D0D0D;
+}
+
+.download-btn {
+  position: relative;
+  padding: 10px 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .news {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,26 +441,47 @@ button:focus {
   max-width: 960px;
 }
 
-.btn {
-  font-size: 1rem;
-  background: url("/assets/hexagon-bg.png") repeat center center;
-  color: #00f8ff;
-  padding: 6px 12px;
-  border: 2px solid #00f8ff;
-  -webkit-box-shadow: 0 0 1rem #00f8ff;
-          box-shadow: 0 0 1rem #00f8ff;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+.mb-1 {
+  margin-bottom: 5px !important;
 }
 
-.btn.btn-lg {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 12px 24px;
+.mb-2 {
+  margin-bottom: 11px !important;
 }
 
-.btn:hover {
-  background: #00f8ff;
-  color: #0D0D0D;
+.mb-3 {
+  margin-bottom: 16px !important;
+}
+
+.mb-4 {
+  margin-bottom: 22px !important;
+}
+
+.mb-5 {
+  margin-bottom: 32px !important;
+}
+
+.mb-6 {
+  margin-bottom: 42px !important;
+}
+
+.mb-7 {
+  margin-bottom: 52px !important;
+}
+
+.fluid-media {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+  height: 0;
+  overflow: hidden;
+}
+
+.fluid-media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=globals.css.map */

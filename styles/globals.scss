@@ -5,6 +5,7 @@
 @import './components/_Navbar.scss';
 @import './components/_Section.scss';
 @import './components/_Intro.scss';
+@import './components/_Button.scss';
 @import './components/_News.scss';
 
 .container{
@@ -15,23 +16,40 @@
     max-width: $site-width;
 }
 
-.btn{
-    font-size: 1rem;
-    background: url('/assets/hexagon-bg.png') repeat center center;
-    color: $blue;
-    padding: 6px 12px;
-    border: 2px solid $blue;
-    box-shadow: 0 0 1rem $blue;
-    transition: all 0.3s ease-out;
+// MARGINS
+.mb-1{
+    margin-bottom: 5px !important;
+}
+.mb-2{
+    margin-bottom: 11px !important;
+}
+.mb-3{
+    margin-bottom: 16px !important;
+}
+.mb-4{
+    margin-bottom: 22px !important;
+}
+.mb-5{
+    margin-bottom: 32px !important;
+}
+.mb-6{
+    margin-bottom: 42px !important;
+}
+.mb-7{
+    margin-bottom: 52px !important;
+}
 
-    &.btn-lg{
-        font-size:1.5rem;
-        font-weight:bold;
-        padding: 12px 24px;
-    }
-
-    &:hover{
-        background: $blue;
-        color: $background;
-    }
+// IFRAME
+.fluid-media {
+    position: relative;
+    padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    height: 0;
+    overflow: hidden;
+}
+.fluid-media iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
