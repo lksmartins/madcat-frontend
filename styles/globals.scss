@@ -2,7 +2,7 @@
 @import './_variables.scss';
 @import './_reset.scss';
 
-@import './components/_Navbar.scss';
+@import './components/_Menu.scss';
 @import './components/_Section.scss';
 @import './components/_Intro.scss';
 @import './components/_Button.scss';
@@ -14,7 +14,7 @@
     width:100%;
     max-width: $site-width;
     margin:0 auto;
-    max-width: $site-width;
+    margin-top: 130px;
 }
 
 // MARGINS

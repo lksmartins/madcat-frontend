@@ -1,0 +1,94 @@
+.menu{
+    position: absolute;
+    width: 50vw !important;
+    top: 62vh; left:25vw;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    //border: 2px solid red;
+    color: black;
+    z-index: 11;
+
+    div{
+        //border: 1px solid $blue;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        transition: all 0.5s ease;
+        max-width: calc( 119px + 120px );
+        text-align: center;
+        background: transparent;
+        position: relative;
+
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 300px;
+            background: transparent;
+            opacity: 0;
+            transition-delay: 0.1s !important;
+            transition: all 0.7s ease;
+        }
+        
+        .text {
+
+            cursor: pointer !important;
+
+            a{
+                //font-size: 1.2rem;
+                //font-weight: bold;
+                //color: #00F0FF;
+                //text-shadow: 0 0 1rem $blue;
+                
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.3rem;
+            }
+        }
+
+        $radial-start: 5%;
+        $radial-end: 50%;
+        
+        &.download{
+            &:before{
+                background: radial-gradient(circle at center 115px,#f196d0 $radial-start, transparent $radial-end);
+            }
+            .text a{
+                color: #f196d0;
+            }
+        }
+        &.menu-news{
+            &:before{
+                background: radial-gradient(circle at center 115px,#93f1cf $radial-start, transparent $radial-end);
+            }
+            .text a{
+                color: #86f5c4;
+            }
+        }
+        &.about{
+            &:before{
+                background: radial-gradient(circle at center 115px,#60c3e1 $radial-start, transparent $radial-end);
+            }
+            .text a{
+                color: #7ccbeb;
+            }
+        }
+
+        &:hover{
+
+            transform: scale(1.2);
+
+            &:before{
+                opacity: 1;
+            }
+        }
+    }
+}

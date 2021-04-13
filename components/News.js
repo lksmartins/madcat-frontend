@@ -14,13 +14,16 @@ export async function getStaticProps() {
 	const response = await res.json()
 	
 	return {
-		props: {articles: response}
+		props: {
+			test: 'hey',
+			articles: response.articles
+		}
 	}
 }
 
 export default function News(props){
 
-	console.log('articles', props.articles)
+	console.log('articles', props.test, props.articles, props)
 	
 	var newsElements = [
 		{title: 'Título Exemplo 1', content: 'lorem ipsum dolor sit amet...', img: 'http://www.firewatchgame.com/screenshots/firewatch-e3-2.jpg'},

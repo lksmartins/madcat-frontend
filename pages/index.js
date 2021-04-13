@@ -1,15 +1,19 @@
 import Section from '../components/Section'
 import Intro from '../components/Intro_v2'
+import Menu from '../components/Menu'
 import Gallery from '../components/Gallery'
 import News from '../components/News'
 
 export default function Index() {
 
+    // <div id="page-y-offset">0</div>
+
 	return (<div className="blue">
 
+        <Menu />
         <Intro />
 
-        <div className="container">   
+        <div className="container">
 
             <Section className="section center mb-7">
                 <h2 className="title mb-4">Available for Download (Alpha version)</h2>

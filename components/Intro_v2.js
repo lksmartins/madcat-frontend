@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Image from 'next/image'
 
 export default function Intro(){
 
@@ -17,6 +18,9 @@ export default function Intro(){
             var yPos = +(top * speed / 100);
             layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
         }
+
+        // testing
+        //document.getElementById('page-y-offset').innerHTML = top;
     
     }
     
@@ -56,7 +60,7 @@ export default function Intro(){
 
     return (
         <div className="intro parallax">
-            
+
             <div className="frame parallax-item" data-speed="0" />
             <div className="logo parallax-item"  data-speed="80" />
             <div className="robot parallax-item" data-speed="95" />
