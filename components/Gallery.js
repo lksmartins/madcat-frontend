@@ -3,19 +3,21 @@ import React, { useState } from 'react'
 export default function News(props){
 	
 	var images = props.images ? props.images : [
-		{title: 'Título Exemplo 1', content: 'lorem ipsum dolor sit amet...', img: 'http://www.firewatchgame.com/screenshots/firewatch-e3-2.jpg'},
-		{title: 'Título Exemplo 2', content: 'lorem ipsum dolor sit amet...', img: 'http://www.firewatchgame.com/screenshots/firewatch-e3-2.jpg'},
-		{title: 'Título Exemplo 3', content: 'lorem ipsum dolor sit amet...', img: 'http://www.firewatchgame.com/screenshots/firewatch-e3-2.jpg'},
-		{title: 'Título Exemplo 4', content: 'lorem ipsum dolor sit amet...', img: 'http://www.firewatchgame.com/screenshots/firewatch-e3-2.jpg'}
+		{thumb: '/assets/gallery/thumb/tela1.jpg', img: '/assets/gallery/tela1.png'},
+		{thumb: '/assets/gallery/thumb/tela2.jpg', img: '/assets/gallery/tela2.png'},
+		{thumb: '/assets/gallery/thumb/tela3.jpg', img: '/assets/gallery/tela3.png'},
+		{thumb: '/assets/gallery/thumb/tela4.jpg', img: '/assets/gallery/tela4.png'},
+		{thumb: '/assets/gallery/thumb/tela5.jpg', img: '/assets/gallery/tela5.png'},
+		{thumb: '/assets/gallery/thumb/tela6.jpg', img: '/assets/gallery/tela6.png'},
+		{thumb: '/assets/gallery/thumb/tela7.jpg', img: '/assets/gallery/tela7.png'},
+		{thumb: '/assets/gallery/thumb/tela8.jpg', img: '/assets/gallery/tela8.png'}
 	]
 
 	const [lightbox, setLightbox] = useState('hidden')
 
 	function callLightbox(src){
-
 		document.getElementById('lightbox-img').src = src
 		setLightbox('show')
-
 	}
 
     return (
@@ -25,7 +27,7 @@ export default function News(props){
 					<i className="fas fa-times"></i>
 				</div>
 				<div className="main">
-					<img onClick={() => setLightbox('show')} id="lightbox-img" src="http://www.firewatchgame.com/screenshots/firewatch-e3-2.jpg" />
+					<img onClick={() => setLightbox('show')} id="lightbox-img" src="" />
 				</div>
 			</div>
 
@@ -34,7 +36,7 @@ export default function News(props){
 				{
 					images.map((el, index)=>{
 						return (<div key={index}>
-							<img onClick={()=>callLightbox(el.img)} src={el.img} />
+							<img onClick={()=>callLightbox(el.img)} src={el.thumb} />
 						</div>)
 					})
 				}
