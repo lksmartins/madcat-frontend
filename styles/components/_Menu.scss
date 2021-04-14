@@ -1,28 +1,40 @@
+@media (min-width: 3840px) {
+    .menu{
+        top: 71vh !important;
+        left: 25% !important;
+        width: 50% !important;
+    }
+}
+
 .menu{
     position: absolute;
-    width: 60vw !important;
-    top: 71vh; left:20vw;
+    top: 66vh; left: 17.5%;
+    z-index: 12;
 
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    border: 1px solid red;
+    width: 65%;
+    //border: 1px solid red;
     color: black;
-    z-index: 11;
+    /*
+    margin: 0 auto;
+    margin-top: 60px;
+    */
 
     div{
-        border: 1px solid $blue;
+        //border: 1px solid $blue;
     }
 
     .item{
+        width: clamp(120px, 30%, 400px);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 60px;
+        padding: 0 60px;
         padding-top: 0;
         transition: all 0.5s ease;
-        max-width: calc( 119px + 120px );
         text-align: center;
         background: transparent;
         position: relative;
@@ -30,13 +42,14 @@
         &:before{
             content: "";
             position: absolute;
-            top: 0; left: 0;
+            top: -80px; left: 0;
             width: 100%;
-            height: 300px;
+            height: 350px;
             background: transparent;
             opacity: 0;
             transition-delay: 0.1s !important;
             transition: all 0.7s ease;
+            //border: 1px solid red;
         }
         
         .text {
@@ -53,11 +66,11 @@
         }
 
         $radial-start: 5%;
-        $radial-end: 50%;
+        $radial-end: 60%;
         
         &.download{
             &:before{
-                background: radial-gradient(circle at center 115px,#f196d0 $radial-start, transparent $radial-end);
+                background: radial-gradient(circle at center,#f196d0 $radial-start, transparent $radial-end);
             }
             .text a{
                 color: #f196d0;
@@ -65,7 +78,7 @@
         }
         &.menu-news{
             &:before{
-                background: radial-gradient(circle at center 115px,#93f1cf $radial-start, transparent $radial-end);
+                background: radial-gradient(circle at center,#93f1cf $radial-start, transparent $radial-end);
             }
             .text a{
                 color: #86f5c4;
@@ -73,7 +86,7 @@
         }
         &.about{
             &:before{
-                background: radial-gradient(circle at center 115px,#60c3e1 $radial-start, transparent $radial-end);
+                background: radial-gradient(circle at center,#60c3e1 $radial-start, transparent $radial-end);
             }
             .text a{
                 color: #7ccbeb;

@@ -17,7 +17,7 @@ export default function Menu(){
                 items.map((item, index)=>{
                     return (
                         <div key={index} className={`${item.className} item`}>
-                            <a><Image src={`/assets/menu/${item.img}`} width="105" height="119" /></a>
+                            <a><Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" /></a>
                             <div className="text"><a>{item.text}</a></div>
                         </div>
                     )
