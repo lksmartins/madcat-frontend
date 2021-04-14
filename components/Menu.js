@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Menu(){
 
     const items = [
-        {text: 'Download', img: 'download.png', className: 'download', link: ''},
-        {text: 'News', img: 'news.png', className: 'menu-news', link: ''},
-        {text: 'About the Game', img: 'about.png', className: 'about', link: ''}
+        {text: 'Download', img: 'download.png', className: 'download', link: '/dev'},
+        {text: 'News', img: 'news.png', className: 'menu-news', link: '/news'},
+        {text: 'About the Game', img: 'about.png', className: 'about', link: '/dev#about'}
     ]
 
     return (
@@ -17,8 +18,16 @@ export default function Menu(){
                 items.map((item, index)=>{
                     return (
                         <div key={index} className={`${item.className} item`}>
-                            <a><Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" /></a>
-                            <div className="text"><a>{item.text}</a></div>
+                            <Link href={item.link}>
+                                <a>
+                                    <Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" />
+                                </a>
+                            </Link>
+                            <div className="text">
+                                <Link href={item.link}>
+                                    <a>{item.text}</a>
+                                </Link>
+                            </div>
                         </div>
                     )
                 })

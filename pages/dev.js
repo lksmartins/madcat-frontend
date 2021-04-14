@@ -31,7 +31,7 @@ export default function Index() {
                 <News />
             </Section>          
 
-            <Section className="section center">
+            <Section id="about" className="section center">
                 <h3 className="mb-2">Gallery</h3>
                 <Gallery />
             </Section>

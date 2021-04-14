@@ -5,7 +5,7 @@ import News from '../../components/News'
 
 export default function Articles() {
 
-	return (<div className="blue">
+	return (<div>
 
         <Menu />
         <Intro />
