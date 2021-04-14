@@ -1,25 +1,26 @@
 .menu{
     position: absolute;
-    width: 50vw !important;
-    top: 62vh; left:25vw;
+    width: 60vw !important;
+    top: 71vh; left:20vw;
 
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    //border: 2px solid red;
+    border: 1px solid red;
     color: black;
     z-index: 11;
 
     div{
-        //border: 1px solid $blue;
+        border: 1px solid $blue;
     }
 
     .item{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         padding: 60px;
+        padding-top: 0;
         transition: all 0.5s ease;
         max-width: calc( 119px + 120px );
         text-align: center;

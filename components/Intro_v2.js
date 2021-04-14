@@ -4,8 +4,6 @@ import Image from 'next/image'
 export default function Intro(){
 
     function castParallax() {
-
-        console.log('castParallax')
     
         var top = window.pageYOffset;
 
@@ -25,19 +23,22 @@ export default function Intro(){
     }
     
     function dispelParallax() {
-        $("#nonparallax").css('display','block');
-        $("#parallax").css('display','none');
+        document.getElementById("nonparallax").style.display = "block"
+        document.getElementById("parallax").style.display = "none"
     }
     
     function startSite() {
 
-        console.log('Starting site')
+        console.log('Starting site...')
     
         var platform = navigator.platform.toLowerCase();
         var userAgent = navigator.userAgent.toLowerCase();
+
+        console.log(platform)
+        console.log(userAgent)
     
-        if( platform.indexOf('ipad') != -1  ||  platform.indexOf('iphone') != -1 ){
-            //dispelParallax();
+        if( platform.indexOf('ipad') != -1  ||  platform.indexOf('iphone') != -1 || userAgent.indexOf('android') != -1){
+            dispelParallax();
         }
         
         else if(platform.indexOf('win32') != -1 || platform.indexOf('linux') != -1){

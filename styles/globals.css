@@ -71,9 +71,9 @@ button:focus {
 
 .menu {
   position: absolute;
-  width: 50vw !important;
-  top: 62vh;
-  left: 25vw;
+  width: 60vw !important;
+  top: 71vh;
+  left: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,8 +83,13 @@ button:focus {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  border: 1px solid red;
   color: black;
   z-index: 11;
+}
+
+.menu div {
+  border: 1px solid #00f8ff;
 }
 
 .menu .item {
@@ -95,13 +100,14 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 60px;
+  padding-top: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   max-width: calc( 119px + 120px);
@@ -443,9 +449,18 @@ to {
   margin-top: 11px;
 }
 
-body {
+html, body {
   background: url("/assets/bg.png") center repeat;
   background-size: 35%;
+}
+
+#nonparallax {
+  display: none;
+}
+
+#nonparallax img {
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -456,15 +471,45 @@ body {
   margin-top: 160px;
 }
 
+.container#coming-soon {
+  margin-top: 60px;
+}
+
+.container#coming-soon:before {
+  display: none !important;
+}
+
 .container:before {
   content: "";
   position: absolute;
   top: 80vh;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: 100px;
   background: -webkit-gradient(linear, left top, left bottom, from(#10131E), to(transparent));
   background: linear-gradient(#10131E, transparent);
+}
+
+.madcat-logo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.madcat-logo img {
+  width: 100%;
+  height: auto;
 }
 
 .mb-1 {
