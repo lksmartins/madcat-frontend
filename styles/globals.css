@@ -125,10 +125,6 @@ button:focus {
   transition: all 0.7s ease;
 }
 
-.menu .item .text {
-  cursor: pointer !important;
-}
-
 .menu .item .text a {
   font-size: 1rem;
   text-transform: uppercase;
@@ -169,7 +165,7 @@ button:focus {
 }
 
 .section {
-  margin-bottom: 32px;
+  margin-bottom: 52px;
 }
 
 .section.center {
@@ -447,12 +443,28 @@ to {
   margin-top: 11px;
 }
 
+body {
+  background: url("/assets/bg.png") center repeat;
+  background-size: 35%;
+}
+
 .container {
   padding: 32px 20px;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  margin-top: 130px;
+  margin-top: 160px;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#10131E), to(transparent));
+  background: linear-gradient(#10131E, transparent);
 }
 
 .mb-1 {
@@ -485,6 +497,10 @@ to {
 
 .hidden {
   display: none !important;
+}
+
+.pointer {
+  cursor: pointer !important;
 }
 
 .fluid-media {
