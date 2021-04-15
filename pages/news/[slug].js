@@ -71,7 +71,7 @@ export default function Article(props) {
                     </div>
 
                     <div className="date">{article.formatted_date}</div>
-                    
+
                     <h1 className="title">{article.title}</h1>
 
                     <p>
@@ -82,19 +82,23 @@ export default function Article(props) {
             </div>
 
             <div className="sidebar">
+
+                <div className="title blue">
+                    Latest News
+                </div>
                 
                 {
                     articles.map((articleItem, index)=>{
                         return (
                             <div className="article-element" key={index}>
-                                <div className="date">
-                                    <Link href={`/news/${articleItem.slug}`}>
-                                        <a>{articleItem.formatted_date}</a>
-                                    </Link>
-                                </div>
                                 <div className="title">
                                     <Link href={`/news/${articleItem.slug}`}>
                                         <a>{articleItem.title}</a>
+                                    </Link>
+                                </div>
+                                <div className="date">
+                                    <Link href={`/news/${articleItem.slug}`}>
+                                        <a>{articleItem.formatted_date}</a>
                                     </Link>
                                 </div>
                             </div>

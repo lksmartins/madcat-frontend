@@ -2,6 +2,7 @@ import Section from '../../components/Section'
 import Intro from '../../components/Intro_v2'
 import Menu from '../../components/Menu'
 import News from '../../components/News'
+import SectionTitle from '../../components/SectionTitle'
 
 export async function getServerSideProps() {
 
@@ -29,13 +30,13 @@ export default function Articles(props) {
 
 	return (<div>
 
-        <Menu />
-        <Intro />
+		<Menu className="menu small"/>
+        <Intro className="intro parallax small" />
 
         <div className="container">
 
             <Section className="section center">
-                <h2 className="title mb-4">News</h2>
+				<SectionTitle>News</SectionTitle>
                 <News articles={props.articles} />
             </Section>
 
