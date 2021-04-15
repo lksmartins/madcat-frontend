@@ -1,6 +1,7 @@
 import Section from '../../components/Section'
 import Intro from '../../components/Intro_v2'
 import Menu from '../../components/Menu'
+import Link from 'next/link'
 
 export async function getServerSideProps(context) {
 
@@ -14,11 +15,35 @@ export async function getServerSideProps(context) {
 		})
 	})
 
-	const data = await res.json()
+	const article = await res.json()
+
+    const data = await fetch('https://chave-mestra.net/api/articles/index.php', {
+		method: 'POST',
+		body: JSON.stringify({ 
+			token: process.env.API_KEY, 
+			action: 'articles',
+			group_id: process.env.GROUP_ID
+		})
+	})
+
+	const articles = await data.json()
+
+    if( article.status == 400 ){
+        return {
+            props: {
+                article: {
+                    title: 'Article not found',
+                    formatted_date: ''
+                },
+                articles: articles.articles
+            }
+        }
+    }
 	
 	return {
 		props: {
-			article: data.article
+			article: article.article,
+            articles: articles.articles
 		}
 	}
 }
@@ -26,25 +51,29 @@ export async function getServerSideProps(context) {
 export default function Article(props) {
 
     const article = props.article
+    const articles = props.articles
+
+    console.log(props)
 
 	return (<div>
 
-        <Menu />
-        <Intro />
+        <Menu className="menu small"/>
+        <Intro className="intro parallax small" />
 
         <div id="article" className="container grid">
 
             <div className="main">
 
                 <Section className="section article">
+
                     <div className="img">
                         <img src={article.img}/>
                     </div>
-                    <div className="date">{article.formatted_date}</div>
-                    <h1 className="title mb-4">{article.title}</h1>
-                </Section>
 
-                <Section className="section">
+                    <div className="date">{article.formatted_date}</div>
+                    
+                    <h1 className="title">{article.title}</h1>
+
                     <p>
                         {article.content}
                     </p>
@@ -53,7 +82,26 @@ export default function Article(props) {
             </div>
 
             <div className="sidebar">
-                sidebar
+                
+                {
+                    articles.map((articleItem, index)=>{
+                        return (
+                            <div className="article-element" key={index}>
+                                <div className="date">
+                                    <Link href={`/news/${articleItem.slug}`}>
+                                        <a>{articleItem.formatted_date}</a>
+                                    </Link>
+                                </div>
+                                <div className="title">
+                                    <Link href={`/news/${articleItem.slug}`}>
+                                        <a>{articleItem.title}</a>
+                                    </Link>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+
             </div>
 
             

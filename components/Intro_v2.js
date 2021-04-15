@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import Image from 'next/image'
 
-export default function Intro(){
+export default function Intro(props){
 
     function castParallax() {
     
@@ -60,7 +59,7 @@ export default function Intro(){
     }, [])
 
     return (
-        <div className="intro parallax">
+        <div className={ props.className ? props.className : 'intro parallax' }>
 
             <div className="frame parallax-item" data-speed="0" />
             <div className="logo parallax-item"  data-speed="80" />

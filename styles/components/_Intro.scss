@@ -19,6 +19,16 @@
         overflow: hidden !important;
         //border: 1px solid red;
 
+        // small
+        &.small{
+            height: 50vh;
+
+            .robot{
+                background-size: 60% !important;
+                background-position: 80% 70% !important;
+            }
+        }
+
         .parallax-item{
             background-size: cover !important;
             background-position: bottom center !important;
@@ -74,8 +84,6 @@
         */
     }
 
-    
-
     .react-parallax-content{
 
         display: flex;
@@ -86,8 +94,6 @@
             margin-top: 60px;
             position: relative;
         }
-    }
-
-    
+    } 
 
 }

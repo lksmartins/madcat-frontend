@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Menu(){
+export default function Menu(props){
 
     const items = [
         {text: 'Download', img: 'download.png', className: 'download', link: '/dev'},
@@ -12,8 +12,8 @@ export default function Menu(){
 
     return (
 
-        <div id="menu" className="menu">
-
+        <div id="menu" className={ props.className ? props.className : 'menu' }>
+            <div className="menu-container">
             {
                 items.map((item, index)=>{
                     return (
@@ -32,7 +32,7 @@ export default function Menu(){
                     )
                 })
             }
-
+            </div>
         </div>
     )
   
