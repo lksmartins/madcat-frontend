@@ -4,11 +4,31 @@ import Menu from '../components/Menu'
 import Gallery from '../components/Gallery'
 import News from '../components/News'
 
-export default function Index() {
+export async function getServerSideProps() {
+
+	const res = await fetch('https://chave-mestra.net/api/articles/index.php', {
+		method: 'POST',
+		body: JSON.stringify({ 
+			token: process.env.API_KEY, 
+			action: 'articles',
+			group_id: process.env.GROUP_ID
+		})
+	})
+
+	const data = await res.json()
+	
+	return {
+		props: {
+			articles: data.articles
+		}
+	}
+}
+
+export default function Index(props) {
 
     // <div id="page-y-offset">0</div>
 
-	return (<div className="blue">
+	return (<div>
 
         <Menu />
         <Intro />
@@ -28,15 +48,15 @@ export default function Index() {
 
             <Section className="section center">
                 <h3 className="mb-2">Latest News</h3>
-                <News />
+                <News articles={props.articles} />
             </Section>          
 
             <Section id="about" className="section center">
-                <h3 className="mb-2">Gallery</h3>
+                <h3 className="mb-2">About the Game</h3>
+
+                <h3 className="mb-2">Screenshots</h3>
                 <Gallery />
             </Section>
-
-            
 
         </div>
 

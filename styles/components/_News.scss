@@ -24,18 +24,56 @@
             height: 20vw;
             //border: 1px solid red;
             display: flex;
+            overflow: hidden;
 
-            img{
+            a{
                 width: 100%;
-                object-fit: cover;
-                object-position: center;
+                height: 100%;
+
+                img{
+                    width: 100%;
+                    min-height: 20vw;
+                    object-fit: cover;
+                    object-position: center;
+                }
             }
+            
         }
         
 
         .title{
             margin-top: 11px;
         }
+    }
+
+}
+
+#article{
+
+    .article{
+
+        .img{
+
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+
+            img{
+                max-height: 500px;
+            }
+        }
+
+        .date{
+            font-size: 0.9rem;
+            opacity: 0.5;
+            margin-bottom: 30px;
+        }
+
     }
 
 }

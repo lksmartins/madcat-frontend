@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function News(props){
 	
@@ -14,14 +15,32 @@ export default function News(props){
 			
 			{
 				newsElements.map((news, index)=>{
-					return (<div className="news-element" key={index}>
-						<div className="img">
-							<img src={news.img} />
+					return (
+						<div className="news-element" key={index}>
+							<div className="img">
+								<Link href={`/news/${news.slug}`}>
+									<a>
+										<img src={news.img} />
+									</a>
+								</Link>
+							</div>
+							<div className="date">
+								<Link href={`/news/${news.slug}`}>
+									<a>{news.formatted_date}</a>
+								</Link>
+							</div>
+							<h3 className="title">
+								<Link href={`/news/${news.slug}`}>
+									<a>{news.title}</a>
+								</Link>
+							</h3>
+							<p>
+								<Link href={`/news/${news.slug}`}>
+									<a>{news.preview}</a>
+								</Link>
+							</p>
 						</div>
-						<div className="date">{news.formatted_date}</div>
-						<h3 className="title">{news.title}</h3>
-						<p>{news.preview}</p>
-					</div>)
+					)
 				})
 			}
 

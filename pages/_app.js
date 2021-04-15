@@ -13,6 +13,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossOrigin="anonymous" />
       </Head>
       <Component {...pageProps} />
+      <div className="madcat-logo">
+          <img src="/assets/logo-color.png"/>
+      </div>
     </div>
   )
 }
