@@ -42,6 +42,12 @@ html, body{
     p{
         text-align: center;
     }
+
+    @media (max-width: 600px) {
+        .buttons{
+            flex-direction: column;
+        }
+    }
 }
 
 #about{
@@ -78,6 +84,19 @@ html, body{
             height: 100%;
         }
     }
+    
+}
+
+@media (max-width: 375px) {
+    .section-title{
+        background-size: cover;
+        background-position: center left;
+        border-right: 2px solid $blue;
+
+        .spike{
+            display: none;
+        }
+    }
 }
 
 .container{
@@ -94,11 +113,21 @@ html, body{
         }
         
     }
+}
 
-    &.grid{
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        gap: 22px;
+@media (max-width: 960px) {
+    .container{
+        padding: 1rem 2rem 0 2rem;
+    }
+
+    .madcat-logo{
+        display: none !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        padding: 0 2rem 0 2rem;
     }
 }
 

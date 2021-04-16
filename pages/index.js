@@ -7,13 +7,7 @@ export default function Index() {
 
 	return (<div>
 
-        <div id="nonparallax">
-            <img src="/assets/intro/nonparallax.jpg"/>
-        </div>
-
-        <div id="parallax">
-            <Intro />
-        </div>
+        <Intro />
 
         <div className="container" id="coming-soon">
 

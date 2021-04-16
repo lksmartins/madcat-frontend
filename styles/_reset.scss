@@ -49,11 +49,3 @@ button:focus {
     outline: none;
     border: none;
 }
-
-@include media("<desktop") {
-
-    body{
-        padding-bottom: 50px;
-    }
-
-}
