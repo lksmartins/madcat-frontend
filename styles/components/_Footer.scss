@@ -1,0 +1,12 @@
+.footer{
+    width: 100%;
+    border-top: 3px solid $blue;
+    background: url('/assets/hexagon-bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        max-width: 200px;
+    }
+}

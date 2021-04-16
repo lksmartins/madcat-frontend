@@ -8,6 +8,7 @@
 @import './components/_Button.scss';
 @import './components/_Gallery.scss';
 @import './components/_News.scss';
+@import './components/_Footer.scss';
 
 html, body{
     background: url("/assets/bg.png") center repeat;
@@ -31,6 +32,9 @@ html, body{
         align-items: center;
         gap: 12px;
         padding-top: 20px;
+    }
+    p{
+        text-align: center;
     }
 }
 

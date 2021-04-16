@@ -43,8 +43,10 @@ export default function Index(props) {
         <div className="container">
 
             <Section className="section center" id="download">
-                <p>The game download will be available soon.<br/>
-                    For now you can check some of these links below:</p>
+                <p>
+                    The game download will be available soon.<br/>
+                    For now you can check some of these links below:
+                </p>
                 <div className="buttons">
                     <a href="https://store.steampowered.com/app/1602030/MegaBattle/" className="btn btn-md" target="_blank"><i className="fab fa-steam"></i> Steam</a>
                     <a href="https://madcatgames.itch.io/megabattle" className="btn btn-md" target="_blank"><i className="fab fa-itch-io"></i> Itch.io</a>

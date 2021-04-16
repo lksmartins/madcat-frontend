@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 
 import '../styles/globals.css'
 
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
       <div className="madcat-logo">
           <img src="/assets/logo-color.png"/>
       </div>
+      <Footer/>
     </div>
   )
 }
