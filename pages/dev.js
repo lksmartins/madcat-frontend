@@ -46,7 +46,7 @@ export default function Index(props) {
             <Section className="section center" id="download">
                 <p>
                     The game download will be available soon.<br/>
-                    For now you can check some of these links below:
+                    For now you can check these links below:
                 </p>
                 <div className="buttons">
                     <a href="https://store.steampowered.com/app/1602030/MegaBattle/" className="btn btn-md" target="_blank"><i className="fab fa-steam"></i> Steam</a>
@@ -64,7 +64,7 @@ export default function Index(props) {
                 <SectionTitle>Latest News</SectionTitle>
                 <News articles={props.articles} />
                 <div id="news-ver-mais">
-                    <Link href="/news"><a className="btn btn-sm"><i className="fas fa-newspaper"></i> Ver Mais</a></Link>
+                    <Link href="/news"><a className="btn btn-sm"><i className="fas fa-newspaper"></i> Read More</a></Link>
                 </div>
             </Section>          
 
