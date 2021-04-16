@@ -42,7 +42,7 @@ export async function getServerSideProps(context) {
 	
 	return {
 		props: {
-			article: article.article,
+			article: { status:article.status, ...article.article},
             articles: articles.articles
 		}
 	}
@@ -53,7 +53,7 @@ export default function Article(props) {
     const article = props.article
     const articles = props.articles
 
-    console.log(props)
+    console.log(article)
 
 	return (<div>
 
@@ -67,7 +67,7 @@ export default function Article(props) {
                 <Section className="section article">
 
                     <div className="img">
-                        <img src={article.img}/>
+                        <img src={ article.img==null && article.status == 200 ? '/assets/placeholder.png' : article.img }/>
                     </div>
 
                     <div className="date">{article.formatted_date}</div>

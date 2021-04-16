@@ -14,12 +14,23 @@ html, body{
     background-size: 35%;
 }
 
+// PAGES & SECTIONS
 // coming soon
 #nonparallax{
     display: none;
     img{
         width: 100%;
         height: auto;
+    }
+}
+
+#download{
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 12px;
+        padding-top: 20px;
     }
 }
 
@@ -41,6 +52,7 @@ html, body{
     align-items: center;
     background: url('/assets/section-title/bg-shape.png') no-repeat center;
     background-size: contain;
+    margin-top: 10px;
     margin-bottom: 22px;
     position: relative;
 

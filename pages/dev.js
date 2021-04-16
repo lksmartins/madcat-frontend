@@ -36,14 +36,18 @@ export default function Index(props) {
 
         <div className="container">
 
-            <Section className="section">
-                <h2 className="title mb-4">Available for Download (Alpha version)</h2>
-                <a className="btn btn-lg">Download for Windows</a>
+            <Section className="section center" id="download">
+                <p>The game download will be available soon.<br/>
+                    For now you can check some of these links below:</p>
+                <div className="buttons">
+                    <a href="https://store.steampowered.com/app/1602030/MegaBattle/" className="btn btn-md" target="_blank"><i className="fab fa-steam"></i> Steam</a>
+                    <a href="https://madcatgames.itch.io/megabattle" className="btn btn-md" target="_blank"><i className="fab fa-itch-io"></i> Itch.io</a>
+                </div>
             </Section>
 
             <Section className="section">
                 <div className="fluid-media">
-                    <iframe src="https://www.youtube-nocookie.com/embed/cXWlgP5hZzc" frameBorder="0" allowFullScreen=""></iframe>
+                    <iframe src="https://www.youtube-nocookie.com/embed/H9nIaNLyd3s" frameBorder="0" allowFullScreen=""></iframe>
                 </div>
             </Section>  
 

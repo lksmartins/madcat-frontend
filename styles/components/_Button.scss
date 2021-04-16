@@ -24,15 +24,31 @@ to {
     box-shadow: 0 0 1rem $blue;
     transition: all 0.3s ease-out;
 
+    i{
+        color: $blue;
+    }
+
     &.btn-lg{
         font-size:1.5rem;
         font-weight:bold;
         padding: 12px 24px;
     }
 
+    &.btn-md{
+        font-size:1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        padding: 12px 24px;
+        border-radius: 30px;
+    }
+
     &:hover{
         background: $blue;
         color: $background;
+
+        i{
+            color: $background;
+        }
     }
 }
 

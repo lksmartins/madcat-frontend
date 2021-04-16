@@ -20,7 +20,7 @@ export default function News(props){
 							<div className="img">
 								<Link href={`/news/${news.slug}`}>
 									<a>
-										<img src={news.img} />
+										<img src={ news.img ? news.img : '/assets/placeholder.png' } />
 									</a>
 								</Link>
 							</div>
