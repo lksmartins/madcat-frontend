@@ -13,7 +13,8 @@ export async function getServerSideProps() {
 		body: JSON.stringify({ 
 			token: process.env.API_KEY, 
 			action: 'articles',
-			group_id: process.env.GROUP_ID
+			group_id: process.env.GROUP_ID,
+            limit: 4
 		})
 	})
 
