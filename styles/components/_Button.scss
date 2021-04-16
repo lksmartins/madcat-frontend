@@ -38,6 +38,14 @@ to {
         font-size:1.2rem;
         text-transform: uppercase;
         letter-spacing: 0.3rem;
+        padding: 10px 22px;
+        border-radius: 30px;
+    }
+
+    &.btn-sm{
+        font-size:1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
         padding: 12px 24px;
         border-radius: 30px;
     }

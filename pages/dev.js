@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Section from '../components/Section'
 import Intro from '../components/Intro_v2'
 import Menu from '../components/Menu'
@@ -62,6 +63,9 @@ export default function Index(props) {
             <Section className="section">
                 <SectionTitle>Latest News</SectionTitle>
                 <News articles={props.articles} />
+                <div id="news-ver-mais">
+                    <Link href="/news"><a className="btn btn-sm"><i className="fas fa-newspaper"></i> Ver Mais</a></Link>
+                </div>
             </Section>          
 
             <Section id="about">

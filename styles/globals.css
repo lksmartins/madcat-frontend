@@ -364,6 +364,14 @@ to {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+  padding: 10px 22px;
+  border-radius: 30px;
+}
+
+.btn.btn-sm {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
   padding: 12px 24px;
   border-radius: 30px;
 }
@@ -601,10 +609,12 @@ to {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 0 1rem #00f8ff;
+          box-shadow: 0 0 1rem #00f8ff;
 }
 
 .footer img {
-  max-width: 200px;
+  max-width: 12vw;
 }
 
 html, body {
@@ -619,6 +629,16 @@ html, body {
 #nonparallax img {
   width: 100%;
   height: auto;
+}
+
+#news-ver-mais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 26px;
 }
 
 #download .buttons {
