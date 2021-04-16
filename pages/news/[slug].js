@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Section from '../../components/Section'
 import Intro from '../../components/Intro_v2'
 import Menu from '../../components/Menu'
@@ -56,6 +57,10 @@ export default function Article(props) {
     console.log(article)
 
 	return (<div>
+
+        <Head>
+        	<title>{article.title} | MadCat Corp.</title>
+      	</Head>
 
         <Menu className="menu small"/>
         <Intro className="intro parallax small" />

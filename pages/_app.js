@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <title>MadCat</title>
+        <title>MadCat Corp.</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet" />
