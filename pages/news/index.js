@@ -31,7 +31,14 @@ export default function Articles(props) {
 	return (<div>
 
 		<Menu className="menu small"/>
-        <Intro className="intro parallax small" />
+        
+		<div id="nonparallax">
+            <img src="/assets/intro/nonparallax.jpg"/>
+        </div>
+
+        <div id="parallax">
+			<Intro className="intro parallax small" />
+        </div>
 
         <div className="container">
 

@@ -32,7 +32,13 @@ export default function Index(props) {
 	return (<div>
 
         <Menu />
-        <Intro />
+        <div id="nonparallax">
+            <img src="/assets/intro/nonparallax.jpg"/>
+        </div>
+
+        <div id="parallax">
+            <Intro />
+        </div>
 
         <div className="container">
 
