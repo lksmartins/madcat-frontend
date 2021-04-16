@@ -87,7 +87,7 @@ html, body{
     
 }
 
-@media (max-width: 375px) {
+@include media("<desktop") {
     .section-title{
         background-size: cover;
         background-position: center left;
