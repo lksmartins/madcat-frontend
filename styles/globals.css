@@ -268,31 +268,6 @@ button:focus {
   position: relative;
   background: transparent !important;
   overflow: hidden !important;
-  /*
-        @media (min-width: 1920px) {
-            .logo{
-                background-size: 85% !important;
-            }
-            .robot{
-                background-position: 50% center !important;
-                background-size: 65% !important;
-            }  
-        }
-
-        @media (min-width: 2560px) {
-            .logo{
-                background-size: 70% !important;
-            }  
-            .robot{
-                background-position: 70% center !important;
-                background-size: 35% !important;
-            }  
-        }
-        */
-}
-
-.intro.parallax.small {
-  height: 48vh;
 }
 
 .intro.parallax .parallax-item {
@@ -331,6 +306,15 @@ button:focus {
   background-position: center !important;
   background-size: 95% !important;
   z-index: 8;
+}
+
+.intro.parallax.small {
+  height: 48vh;
+}
+
+.intro.parallax.small .robot {
+  background-size: 70% !important;
+  background-position: 75% 50% !important;
 }
 
 @media (orientation: portrait) {
@@ -630,21 +614,25 @@ to {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  max-height: clamp(200px, 35vh, 400px);
+  height: 50vh;
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(0, 248, 255, 0.2);
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
   overflow: hidden;
+  position: relative;
 }
 
 #article .article .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
   -o-object-position: center;
      object-position: center;
 }

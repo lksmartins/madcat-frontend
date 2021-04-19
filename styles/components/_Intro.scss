@@ -19,10 +19,6 @@
         overflow: hidden !important;
         //border: 1px solid red;
 
-        &.small{
-            height: 48vh;
-        }
-
         .parallax-item{
             background-size: cover !important;
             background-position: bottom center !important;
@@ -55,27 +51,15 @@
             background-size: 95% !important;
             z-index: 8;   
         }
-        /*
-        @media (min-width: 1920px) {
-            .logo{
-                background-size: 85% !important;
-            }
-            .robot{
-                background-position: 50% center !important;
-                background-size: 65% !important;
-            }  
-        }
+        
+        &.small{
+            height: 48vh;
 
-        @media (min-width: 2560px) {
-            .logo{
-                background-size: 70% !important;
-            }  
             .robot{
-                background-position: 70% center !important;
-                background-size: 35% !important;
-            }  
+                background-size: 70% !important;
+                background-position: 75% 50% !important;
+            }
         }
-        */
     }
 
     @media (orientation: portrait) {
