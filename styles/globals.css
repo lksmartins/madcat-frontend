@@ -182,71 +182,47 @@ button:focus {
   opacity: 1;
 }
 
-@media (min-width: 2560px) {
+@media (orientation: portrait) {
   .menu {
-    top: 71vh !important;
-    left: 0 !important;
+    width: 100% !important;
+    top: 31.5vh !important;
+  }
+  .menu .menu-container {
     width: 100% !important;
   }
   .menu .menu-container .item {
-    width: 25%;
+    width: 33%;
+    max-width: 200px;
   }
-}
-
-@media (min-width: 600px) and (max-width: 768px) {
-  .menu {
-    top: 22vw !important;
-    left: 0;
-    width: 100%;
-  }
-  .menu:before {
-    display: none;
-  }
-  .menu .menu-container {
-    width: 100%;
-  }
-  .menu .menu-container .item .text a {
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .menu {
-    top: 109vw !important;
-    left: 0;
-    width: 100%;
-  }
-  .menu:before {
-    display: none;
-  }
-  .menu .menu-container {
-    width: 100%;
-  }
-  .menu .menu-container .item .text a {
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 0;
-  }
-}
-
-@media (max-width: 375px) {
-  .menu {
-    top: 108vw !important;
-    left: 0;
-    width: 100%;
-  }
-  .menu:before {
-    display: none;
-  }
-  .menu .menu-container {
-    width: 100%;
+  .menu .menu-container .item:before {
+    display: none !important;
   }
   .menu .menu-container .item .text a {
     font-size: 0.8rem;
     font-weight: bold;
-    letter-spacing: 0;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media (min-width: 1960px) {
+  .menu {
+    width: 100% !important;
+  }
+  .menu.small {
+    top: 39.3vh;
+  }
+  .menu .menu-container {
+    width: 50% !important;
+  }
+  .menu .menu-container .item {
+    width: 33%;
+  }
+  .menu .menu-container .item img {
+    padding-bottom: 14px !important;
+  }
+  .menu .menu-container .item .text a {
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
   }
 }
 
@@ -313,12 +289,7 @@ button:focus {
 }
 
 .intro.parallax.small {
-  height: 50vh;
-}
-
-.intro.parallax.small .robot {
-  background-size: 60% !important;
-  background-position: 80% 70% !important;
+  height: 48vh;
 }
 
 .intro.parallax .parallax-item {
@@ -357,6 +328,19 @@ button:focus {
   background-position: center !important;
   background-size: 95% !important;
   z-index: 8;
+}
+
+@media (orientation: portrait) {
+  .intro.parallax {
+    height: 40vh;
+  }
+  .intro.parallax .logo {
+    background-size: 220vw !important;
+    background-position: -7vw 1vw !important;
+  }
+  .intro.parallax .robot {
+    display: none;
+  }
 }
 
 .intro .react-parallax-content {
@@ -644,16 +628,22 @@ to {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  max-height: clamp(200px, 35vh, 400px);
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(0, 248, 255, 0.2);
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 #article .article .img img {
-  max-height: 500px;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 #article .article .date {
@@ -774,8 +764,10 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("/assets/section-title/bg-shape.png") no-repeat center;
-  background-size: contain;
+  background: url("/assets/section-title/bg-shape.png") no-repeat;
+  background-size: cover;
+  background-position: center left;
+  border-right: 2px solid #00f8ff;
   margin-top: 10px;
   margin-bottom: 22px;
   position: relative;
@@ -793,12 +785,7 @@ html, body {
   height: 100%;
 }
 
-@media (max-width: 1023px) {
-  .section-title {
-    background-size: cover;
-    background-position: center left;
-    border-right: 2px solid #00f8ff;
-  }
+@media (orientation: portrait) {
   .section-title .spike {
     display: none;
   }

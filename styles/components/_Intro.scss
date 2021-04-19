@@ -19,14 +19,8 @@
         overflow: hidden !important;
         //border: 1px solid red;
 
-        // small
         &.small{
-            height: 50vh;
-
-            .robot{
-                background-size: 60% !important;
-                background-position: 80% 70% !important;
-            }
+            height: 48vh;
         }
 
         .parallax-item{
@@ -82,6 +76,20 @@
             }  
         }
         */
+    }
+
+    @media (orientation: portrait) {
+        &.parallax{
+            height: 40vh;
+
+            .logo{
+                background-size: 220vw !important;
+                background-position: -7vw 1vw !important;
+            }
+            .robot{
+                display: none;
+            }
+        }
     }
 
     .react-parallax-content{

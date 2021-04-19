@@ -66,8 +66,10 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/assets/section-title/bg-shape.png') no-repeat center;
-    background-size: contain;
+    background: url('/assets/section-title/bg-shape.png') no-repeat;
+    background-size: cover;
+    background-position: center left;
+    border-right: 2px solid $blue;
     margin-top: 10px;
     margin-bottom: 22px;
     position: relative;
@@ -87,12 +89,8 @@ html, body{
     
 }
 
-@include media("<desktop") {
+@media (orientation: portrait) {
     .section-title{
-        background-size: cover;
-        background-position: center left;
-        border-right: 2px solid $blue;
-
         .spike{
             display: none;
         }
