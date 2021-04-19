@@ -59,6 +59,15 @@ html, body{
     }
 }
 
+// TEXT FORMATTING
+p a{
+    color: $blue;
+}
+p{
+    p{margin-bottom: 10px;}
+}
+
+
 .section-title{
     width: 100%;
     padding: 20px;

@@ -75,9 +75,11 @@ export default function Article(props) {
 
                     <Section className="section article">
 
+                        { article.status == 200 ? 
                         <div className="img">
                             <img src={ article.img==null && article.status == 200 ? '/assets/placeholder.png' : article.img }/>
                         </div>
+                        : '' }
 
                         <div className="date">{article.formatted_date}</div>
 
