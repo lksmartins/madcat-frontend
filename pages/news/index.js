@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Section from '../../components/Section'
 import Intro from '../../components/Intro_v2'
 import Menu from '../../components/Menu'
@@ -43,6 +44,10 @@ export default function Articles(props) {
             <Section className="section center">
 				<SectionTitle>News</SectionTitle>
                 <News articles={props.articles} />
+            </Section>
+
+			<Section>
+				<Link href="/"><a className="btn btn-sm"><i class="fas fa-undo"></i> Back to Home</a></Link>
             </Section>
 
         </div>

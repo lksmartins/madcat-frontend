@@ -583,7 +583,11 @@ to {
   }
 }
 
-#article.grid {
+#article .buttons .btn {
+  margin-right: 14px;
+}
+
+#article .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 1fr;

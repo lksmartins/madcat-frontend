@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Section from '../../components/Section'
 import Intro from '../../components/Intro_v2'
 import Menu from '../../components/Menu'
-import Link from 'next/link'
+import HtmlParser from 'react-html-parser'
 
 export async function getServerSideProps(context) {
 
@@ -23,7 +24,8 @@ export async function getServerSideProps(context) {
 		body: JSON.stringify({ 
 			token: process.env.API_KEY, 
 			action: 'articles',
-			group_id: process.env.GROUP_ID
+			group_id: process.env.GROUP_ID,
+            limit: 5
 		})
 	})
 
@@ -65,55 +67,62 @@ export default function Article(props) {
         <Menu className="menu small"/>
         <Intro className="intro parallax small" />
 
-        <div id="article" className="container grid">
+        <div id="article" className="container">
 
-            <div className="main">
+            <div className="grid">
 
-                <Section className="section article">
+                <div className="main">
 
-                    <div className="img">
-                        <img src={ article.img==null && article.status == 200 ? '/assets/placeholder.png' : article.img }/>
-                    </div>
+                    <Section className="section article">
 
-                    <div className="date">{article.formatted_date}</div>
+                        <div className="img">
+                            <img src={ article.img==null && article.status == 200 ? '/assets/placeholder.png' : article.img }/>
+                        </div>
 
-                    <h1 className="title">{article.title}</h1>
+                        <div className="date">{article.formatted_date}</div>
 
-                    <p>
-                        {article.content}
-                    </p>
-                </Section>
+                        <h1 className="title">{article.title}</h1>
 
-            </div>
+                        <p>
+                            { HtmlParser(article.content) }
+                        </p>
+                    </Section>
 
-            <div className="sidebar">
-
-                <div className="title blue">
-                    Latest News
                 </div>
-                
-                {
-                    articles.map((articleItem, index)=>{
-                        return (
-                            <div className="article-element" key={index}>
-                                <div className="title">
-                                    <Link href={`/news/${articleItem.slug}`}>
-                                        <a>{articleItem.title}</a>
-                                    </Link>
+
+                <div className="sidebar">
+
+                    <div className="title blue">
+                        Latest News
+                    </div>
+                    
+                    {
+                        articles.map((articleItem, index)=>{
+                            return (
+                                <div className="article-element" key={index}>
+                                    <div className="title">
+                                        <Link href={`/news/${articleItem.slug}`}>
+                                            <a>{articleItem.title}</a>
+                                        </Link>
+                                    </div>
+                                    <div className="date">
+                                        <Link href={`/news/${articleItem.slug}`}>
+                                            <a>{articleItem.formatted_date}</a>
+                                        </Link>
+                                    </div>
                                 </div>
-                                <div className="date">
-                                    <Link href={`/news/${articleItem.slug}`}>
-                                        <a>{articleItem.formatted_date}</a>
-                                    </Link>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
+                            )
+                        })
+                    }
+
+                </div>
 
             </div>
-
             
+            <Section className="section buttons">
+                <Link href="/"><a className="btn btn-sm"><i class="fas fa-undo"></i> Back to Home</a></Link>
+                <Link href="/news"><a className="btn btn-sm"><i class="fas fa-undo"></i> Back to News</a></Link>
+            </Section>
 
         </div>
 
