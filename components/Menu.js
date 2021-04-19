@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Menu(props){
 
     const items = [
-        {text: 'Download', img: 'download.png', className: 'download', link: '/dev'},
+        {text: 'Download', img: 'download.png', className: 'download', link: '/'},
         {text: 'News', img: 'news.png', className: 'menu-news', link: '/news'},
         {text: 'About the Game', img: 'about.png', className: 'about', link: '/dev#about'}
     ]
