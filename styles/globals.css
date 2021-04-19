@@ -687,7 +687,27 @@ to {
           box-shadow: 0 0 1rem #00f8ff;
 }
 
-.footer img {
+.footer .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .col .title {
+  font-weight: bold;
+}
+
+.footer .col img {
   max-width: 30vh;
 }
 
@@ -750,8 +770,10 @@ html, body {
   margin-bottom: 10px;
 }
 
-p a {
+.links a {
   color: #00f8ff;
+  text-decoration: underline;
+  text-shadow: 1px 0px 0.5rem #00f8ff;
 }
 
 p p {

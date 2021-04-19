@@ -7,7 +7,19 @@
     align-items: center;
     box-shadow: 0 0 1rem $blue;
 
-    img{
-        max-width: 30vh;
+    .col{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title{
+            font-weight: bold;
+        }
+
+        img{
+            max-width: 30vh;
+        }
     }
 }

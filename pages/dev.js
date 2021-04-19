@@ -100,7 +100,7 @@ export default function Index(props) {
                 <div className="mb-6"></div>
 
                 <SectionTitle>About Us</SectionTitle>
-                <p>
+                <p className="links">
                     <p>Madcat started as <a target="_blank" href="https://chavemestra.net">Chave-Mestra</a>, a Escape Room from Brazil. We fell in love with making games and from that we decided to expand and start making digital games.</p>
                     <p>We became partners with <a target="_blank" href="https://www.cavylabs.com/">Cavylabs</a>, <a target="_blank" href="https://amoraleite.com">Leonardo Amora Leite</a> and <a target="_blank" href="https://www.linkedin.com/in/fabricio-mazzotti-5b8457104/">Fabricio Mazzotti</a> to make our first game.</p>
                     <p>Hope you enjoy it.</p>

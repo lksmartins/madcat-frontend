@@ -60,8 +60,10 @@ html, body{
 }
 
 // TEXT FORMATTING
-p a{
+.links a{
     color: $blue;
+    text-decoration: underline;
+    text-shadow: 1px 0px 0.5rem $blue;
 }
 p{
     p{margin-bottom: 10px;}
