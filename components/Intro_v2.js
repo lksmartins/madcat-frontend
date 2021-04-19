@@ -44,7 +44,7 @@ export default function Intro(props){
         console.log(userAgent)
     
         if( platform.indexOf('ipad') != -1  ||  platform.indexOf('iphone') != -1 ){
-            dispelParallax();
+            //dispelParallax();
         }
         
         else if(platform.indexOf('win32') != -1 || platform.indexOf('linux') != -1){

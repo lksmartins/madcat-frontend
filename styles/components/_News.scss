@@ -81,7 +81,14 @@
     }
 
     @media (max-width: 600px) {
-        &.grid{
+        .buttons{
+            .btn{
+                margin: 10px 0;
+                display: block;
+            }
+        }
+
+        .grid{
             display: flex;
             flex-direction: column;
         }
