@@ -44,7 +44,7 @@ export default function Index(props) {
                     You can download the game in the link below:
                 </p>
                 <div className="buttons">
-                    <a href="https://branching-stories.s3.amazonaws.com/MegaBattle.rar" download="megabattle.rar" className="btn btn-md" target="_blank"><i className="fas fa-download"></i> Download</a>
+                    <a href="https://branching-stories.s3.amazonaws.com/MegaBattle.rar" download="megabattle.rar" className="btn btn-md"><i className="fas fa-download"></i> Download</a>
                 </div>
             </Section>
 
