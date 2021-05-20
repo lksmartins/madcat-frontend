@@ -51,7 +51,7 @@ export default function Index(props) {
 
             <Section className="section">
                 <div className="fluid-media">
-                    <iframe src="https://www.youtube-nocookie.com/embed/H9nIaNLyd3s" frameBorder="0" allowFullScreen=""></iframe>
+                    <iframe src="https://www.youtube-nocookie.com/embed/h-uhBKuzsfY" frameBorder="0" allowFullScreen=""></iframe>
                 </div>
             </Section>  
 
@@ -78,7 +78,7 @@ export default function Index(props) {
                 
                 <p>
                 * Unique mana system;<br/>
-                * Opponing reading atack/defense mechanic;<br/>
+                * Opponent reading attack/defense mechanic;<br/>
                 * You always have card on your hand to play;<br/>
                 * 6 robots classes for building your robot;<br/>
                 * More than 30k combinations for building your bot;<br/>
@@ -101,7 +101,7 @@ export default function Index(props) {
 
                 <SectionTitle>About Us</SectionTitle>
                 <p className="links">
-                    <p>Madcat started as <a target="_blank" href="https://chavemestra.net">Chave-Mestra</a>, a Escape Room from Brazil. We fell in love with making games and from that we decided to expand and start making digital games.</p>
+                    <p>Madcat started as <a target="_blank" href="https://chavemestra.net">Chave-Mestra</a>, an Escape Room from Brazil. We fell in love with making games and from that we decided to expand and start making digital games.</p>
                     <p>We became partners with <a target="_blank" href="https://www.cavylabs.com/">Cavylabs</a>, <a target="_blank" href="https://amoraleite.com">Leonardo Amora Leite</a> and <a target="_blank" href="https://www.linkedin.com/in/fabricio-mazzotti-5b8457104/">Fabricio Mazzotti</a> to make our first game.</p>
                     <p>Hope you enjoy it.</p>
                 </p>
