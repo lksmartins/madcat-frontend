@@ -8,7 +8,7 @@ export default function Menu(props){
     const router = useRouter()
 
     const items = [
-        {text: 'Download', img: 'download.png', className: 'download', link: router.pathname == '/download' ? 'https://branching-stories.s3.amazonaws.com/MegaBattle.rar' : '/'},
+        {text: 'Download', img: 'download.png', className: 'download', link: router.pathname == '/download' ? 'https://cm-articles.s3.amazonaws.com/madcat/MegaBattle.rar' : '/'},
         {text: 'News', img: 'news.png', className: 'menu-news', link: '/news'},
         {text: 'About the Game', img: 'about.png', className: 'about', link: '/#about'}
     ]
