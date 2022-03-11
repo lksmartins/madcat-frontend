@@ -68,20 +68,21 @@ export default function Intro(props){
     return (
         <>
         <div id="nonparallax">
-            <img id="nonparallax-image" src="/assets/intro/nonparallax.png"/>
+            <a href="/"><img id="nonparallax-image" src="/assets/intro/nonparallax.png"/></a>
         </div>
 
         <div id="parallax">			
 
-            <div className={ props.className ? props.className : 'intro parallax' }>
+            <a href="/"><div className={ props.className ? props.className : 'intro parallax' }>
 
                 <div className="frame parallax-item" data-speed="0" />
-                <div className="logo parallax-item"  data-speed="80" />
+                <div className="logo parallax-item" data-speed="80" />
                 <div className="robot parallax-item" data-speed="95" />
                 <div className="cards parallax-item" data-speed="70" />
                 <div className="bg parallax-item"    data-speed="50" />
 
             </div>
+            </a>
 
         </div>
         </>
