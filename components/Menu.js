@@ -21,11 +21,13 @@ export default function Menu(props){
                 items.map((item, index)=>{
                     return (
                         <div key={index} className={`${item.className} item`}>
-                            <Link href={item.link}>
-                                <a>
-                                    <Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" />
-                                </a>
-                            </Link>
+                            { item.text == 'Download' ? <a href="https://cm-articles.s3.amazonaws.com/madcat/MegaBattle-AlphaDemo.zip" download="MegaBattle-AlphaDemo.zip"><Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" /></a> : 
+                                <Link href={item.link}>
+                                    <a>
+                                        <Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" />
+                                    </a>
+                                </Link>
+                            }
                             <div className="text">
                                 <Link href={item.link}>
                                     <a>{item.text}</a>
