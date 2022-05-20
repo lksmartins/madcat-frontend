@@ -40,7 +40,7 @@ export default function Index(props) {
 
             <Section className="section center" id="download">
                 <p>
-                    The game download will be available soon.<br/>
+                    The final version of the game will be available for download soon.<br/>
                     For now you can check these links below:
                 </p>
                 <div className="buttons">
@@ -51,7 +51,7 @@ export default function Index(props) {
 
             <Section className="section">
                 <div className="fluid-media">
-                    <iframe src="https://www.youtube-nocookie.com/embed/_ATyltWFVuQ" frameBorder="0" allowFullScreen=""></iframe>
+                    <iframe src="https://www.youtube-nocookie.com/embed/-7YVwWDhFi8" frameBorder="0" allowFullScreen=""></iframe>
                 </div>
             </Section>  
 
@@ -65,34 +65,49 @@ export default function Index(props) {
 
             <Section id="about">
                 <SectionTitle>About the Game</SectionTitle>
-                <p>
-                Build Robots and enter the arena to battle!
-                </p>
-                <p>
-                MegaBattle is a robot themed collectible card game that offers new and innovative mechanics inspired in fight games, that makes it a fast pace strategic card game.<br/>
-                MegaBattle is a free to play game and you can play in multiplayer mode or story mode.
+                <p className="mb-6">
+                MegaBattle is a futuristic roguelike that offers new and innovative mechanics inspired in fight games, delivering a fast-paced strategy game. Build your robot and enter the arena to fight!
                 </p>
 
                 <h4>MegaBattle Mechanics</h4>
-                <p>MegaBots combines the best of CCG with innovative and fun mechanics, such as:</p>
-                
                 <p>
-                * Unique mana system;<br/>
-                * Opponent reading attack/defense mechanic;<br/>
-                * You always have card on your hand to play;<br/>
-                * 6 robots classes for building your robot;<br/>
-                * More than 30k combinations for building your bot;<br/>
-                * 72 battle cards (and more coming!) to build your battle deck;<br/>
+                MegaBattle combines the best of card games with innovative and fun mechanics, such as:
+                </p>
+                
+                <p className="mb-6">
+                * Unique Mana System;<br/>
+                * Opponing Reading Atack/defense Mechanic;<br/>
+                * You Always Have Card On Your hand to Play;<br/>
+                * 6 Robots Classes For Building Your Robot;<br/>
+                * More than 10k combinations for building your bot;<br/>
                 * 6 planets to explore and fight in search for the perfect parts to defeat the evil Megabot.
                 </p>
 
                 <h4>MegaBattle story and atmosphere</h4>
                 <p>
-                The year is 2235 and the current population of human beings remaining on planet Earth is less than 100,000. This is the result of a mysterious AI that appeared on earth, demanding its total domination or the total extermination of the human race. This artificial intelligence is the terrible Megabot, a perfect war machine that nobody knows where it came from. Megabot believes that conscious life forms are a virus that only consume all the resources of the planets they inhabit. That is why it invades planets and makes an offer: either all the inhabitants turn into machines like him, or all will be eliminated. Many planets tried to fight and were decimated, only 6 accepted the terms of the Megabot and of these 6 planets we have the 6 largest manufacturers of robot parts in the universe, they are: Blastes, Ewall, Freezeltronic, Powertrix, Pyron and Tiltex. These industries produce parts such as the characteristics of the extinct inhabitants of their planets and these technologies have helped to make the Megabot even stronger, as it can adapt to any situation. The planet that had the most developed AI and that offered the most resistance to Megabot's plans was Earth. The AI ​​War, as it was called, which took place in 2188 lasted 28 years and ended up making Megabot want to punish the remaining Terrans. The few who are left now are slaves, and are forced to build robots and fight in arenas scattered throughout the universe to entertain the high class of robots.
+                The year is 2235. The current human population living on planet Earth is reduced to less then 100K. The survivors live in slavery, dominated by a mysterious alien AI. Elders say that before the war, two choices were offered to Mankind: accept the robotic leader or face an inevitable extermination of the human race. Well, it appears we made the worst of choices.
                 </p>
+                <p>
+                Our entire race is now ruled by an artificial intelligence called <b>Megabot</b>, a perfect war machine from an unknown planet and uncertain origins. This alien tyrant bot believes we don't deserve the planet we live in: Earth, of course.
+                </p>
+
                 <p className="mb-6">
-                The arena is Megabot's favorite place of fun and to win you need to know everything about the machines and be able to build the strongest Bot and the best battle strategy. Do not miss too many games in the tournaments, as it will be your end. . After the war and almost 20 years of domination, humans are tired of being treated this way and are planning a way to end the machines, starting with the destruction of Megabot. The best assemblers on Earth are teaming up to create a very powerful bot that is stronger than Megabot. During the MegaBattle, which will be the biggest robot fighting event ever seen in the universe, the assemblers will unite in secret and battle to discover the best pieces and in the end be able to form the best bot this galaxy has ever seen.
-                Willl it be enough to stop the Megabot?
+                Many planets tried to fight him, and were decimated.<b> Only 6 accepted</b> the Megabot terms and became the largest manufacturers of robot parts: <b>Blastes, Ewall, Freezeltronic, Powertrix, Pyron and Tiltex. </b>These industrial colonies exist  to produce robotic parts to improve Megabot and his huge army of shock troopers.
+                </p>
+
+                <h4>Earthans Resists and Pays A Price</h4>
+                <p className="mb-6">
+                Earth endured for some time, resisting and attracting the Megabot's attention. The AI ​​War, as it was called, took place in 2188 and lasted 28 years until Megabot decided to punish the remaining rebel Terrans. As previously said, the few left are now slaves, forced to build robots and fight in arenas to entertain the higher caste of robots.
+                </p>
+                
+                <h4>Get ready to face an increasing challeng</h4>
+                <p className="mb-6">
+                The arenas are basically warzones,  and to win you need to understand everything about the machines and be able to build the strongest one. Besides a nice Bot, to defeat your foes you'll need the best battle strategy. 
+                </p>
+
+                <h4>You Are the Only Hope</h4>
+                <p className="mb-6">
+                The best engineers and assemblers on Earth are teaming up to create a very powerful bot, designed to be stronger than Megabot. But the only way to make it happen, is distracting MegaBot and all the leaders by fighting in MegaBattle Arenas. While they watch your struggle for victory, bet and enjoy the show, a scheme is in course to change our faith forever. You are the one with a card up the sleeve. You can be our hero. Are you strong, brave and smart enough? We'll see it soon.
                 </p>
 
                 <SectionTitle>Screenshots</SectionTitle>
