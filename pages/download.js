@@ -44,13 +44,13 @@ export default function Index(props) {
                     You can download the game in the link below:
                 </p>
                 <div className="buttons">
-                    <a href="https://cm-articles.s3.amazonaws.com/megabattle/MegaBattle0.0.14.zip" download="MegaBattle-AlphaDemo.zip" className="btn btn-md"><i className="fas fa-download"></i> Download</a>
+                    <a href="https://cm-articles.s3.amazonaws.com/megabattle/MegaBattle0.3.3.zip" download="MegaBattle-AlphaDemo.zip" className="btn btn-md"><i className="fas fa-download"></i> Download</a>
                 </div>
             </Section>
 
             <Section className="section">
                 <div className="fluid-media">
-                    <iframe src="https://www.youtube-nocookie.com/embed/_ATyltWFVuQ" frameBorder="0" allowFullScreen=""></iframe>
+                    <iframe src="https://www.youtube-nocookie.com/embed/-7YVwWDhFi8" frameBorder="0" allowFullScreen=""></iframe>
                 </div>
             </Section>  
 
