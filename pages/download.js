@@ -45,13 +45,13 @@ export default function Index(props) {
                     You can download the game in the link below:
                 </p>
                 <div className="buttons">
-                    <a href={gameVersion} download="MegaBattle-AlphaDemo.zip" className="btn btn-md"><i className="fas fa-download"></i> Download</a>
+                    <a href={gameVersion()} download="MegaBattle-AlphaDemo.zip" className="btn btn-md"><i className="fas fa-download"></i> Download</a>
                 </div>
             </Section>
 
             <Section className="section">
                 <div className="fluid-media">
-                    <iframe src={`https://www.youtube-nocookie.com/embed/${trailerId}`} frameBorder="0" allowFullScreen=""></iframe>
+                    <iframe src={`https://www.youtube-nocookie.com/embed/${trailerId()}`} frameBorder="0" allowFullScreen=""></iframe>
                 </div>
             </Section>  
 

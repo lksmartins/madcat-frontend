@@ -22,7 +22,8 @@ export default function Menu(props){
                 items.map((item, index)=>{
                     return (
                         <div key={index} className={`${item.className} item`}>
-                            { item.text == 'Download' ? <a href={gameVersion} download="MegaBattle-AlphaDemo.zip"><Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" /></a> : 
+                            { item.text == 'Download' ? <a href={gameVersion()} download="MegaBattle-AlphaDemo.zip"><Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" /></a> : 
+                            
                                 <Link href={item.link}>
                                     <a>
                                         <Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" />
