@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import {gameVersion} from '../lib/helper'
 
 export default function Menu(props){
 
@@ -21,7 +22,7 @@ export default function Menu(props){
                 items.map((item, index)=>{
                     return (
                         <div key={index} className={`${item.className} item`}>
-                            { item.text == 'Download' ? <a href="https://cm-articles.s3.amazonaws.com/megabattle/MegaBattle0.0.14.zip" download="MegaBattle-AlphaDemo.zip"><Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" /></a> : 
+                            { item.text == 'Download' ? <a href={gameVersion} download="MegaBattle-AlphaDemo.zip"><Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" /></a> : 
                                 <Link href={item.link}>
                                     <a>
                                         <Image quality="100" src={`/assets/menu/${item.img}`} width="500" height="500" />

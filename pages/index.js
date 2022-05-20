@@ -5,6 +5,7 @@ import Menu from '../components/Menu'
 import Gallery from '../components/Gallery'
 import News from '../components/News'
 import SectionTitle from '../components/SectionTitle'
+import {trailerId} from '../lib/helper'
 
 export async function getServerSideProps() {
 
@@ -51,7 +52,7 @@ export default function Index(props) {
 
             <Section className="section">
                 <div className="fluid-media">
-                    <iframe src="https://www.youtube-nocookie.com/embed/-7YVwWDhFi8" frameBorder="0" allowFullScreen=""></iframe>
+                    <iframe src={`https://www.youtube-nocookie.com/embed/${trailerId}`} frameBorder="0" allowFullScreen=""></iframe>
                 </div>
             </Section>  
 
