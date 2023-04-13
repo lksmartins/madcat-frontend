@@ -75,15 +75,14 @@ export default function Article(props) {
 
                     <Section className="section article">
 
+                        <h1 className="title">{article.title}</h1>
+                        <div className="date">{article.formatted_date}</div>
+                        
                         { article.status == 200 ? 
                         <div className="img">
                             <img src={ article.img==null && article.status == 200 ? '/assets/placeholder.png' : article.img }/>
                         </div>
                         : '' }
-
-                        <div className="date">{article.formatted_date}</div>
-
-                        <h1 className="title">{article.title}</h1>
 
                         <p>
                             { HtmlParser(article.content) }
@@ -116,6 +115,16 @@ export default function Article(props) {
                             )
                         })
                     }
+
+                    
+                    <div style={{padding:'2rem 0'}}>
+                        <Link href="/"><a className="btn btn-sm" style={{fontSize:'0.85rem'}}><i class="fas fa-home"></i> Home</a></Link>
+                    </div>
+                    <div>
+                        <Link href="/news"><a className="btn btn-sm" style={{fontSize:'0.85rem'}}><i class="fas fa-undo"></i> News</a></Link>
+                    </div>
+                    
+                    
 
                 </div>
 
