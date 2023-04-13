@@ -46,7 +46,6 @@ export default function Index(props) {
                 </p>
                 <div className="buttons">
                     <a href="https://store.steampowered.com/app/1602030/MegaBattle/" className="btn btn-md" target="_blank"><i className="fab fa-steam"></i> Steam</a>
-                    <a href="https://madcatgames.itch.io/megabattle" className="btn btn-md" target="_blank"><i className="fab fa-itch-io"></i> Itch.io</a>
                 </div>
             </Section>
 
