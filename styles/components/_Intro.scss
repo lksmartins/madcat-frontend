@@ -55,9 +55,16 @@
         &.small{
             height: 48vh;
 
+            .cards{
+                background-position: center 50% !important;
+            }
             .robot{
+                background-position: 30vw 50% !important;
                 background-size: 70% !important;
-                background-position: 75% 50% !important;
+            }
+            .logo{
+                background-position: 0 -15vh !important;
+                background-size: 50% !important;
             }
         }
     }
