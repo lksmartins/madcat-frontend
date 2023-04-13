@@ -1,15 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import {gameVersion} from '../lib/helper'
 
 export default function Menu(props){
 
-    const router = useRouter()
-
     const items = [
-        {text: 'Download', img: 'download.png', className: 'download', link: '/download'},
         {text: 'News', img: 'news.png', className: 'menu-news', link: '/news'},
         {text: 'About the Game', img: 'about.png', className: 'about', link: '/#about'}
     ]
