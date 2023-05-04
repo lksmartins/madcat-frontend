@@ -269,8 +269,8 @@ button:focus {
     height: 40vh;
   }
   .intro.parallax .logo {
-    background-size: 220vw !important;
-    background-position: -7vw 1vw !important;
+    background-size: 150vw !important;
+    background-position: center -30vw !important;
   }
   .intro.parallax .robot {
     display: none;
