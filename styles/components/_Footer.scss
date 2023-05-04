@@ -23,3 +23,10 @@
         }
     }
 }
+
+@media (max-width: 520px) {
+    .footer{
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+}
