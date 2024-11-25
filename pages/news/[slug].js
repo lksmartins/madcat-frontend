@@ -7,7 +7,7 @@ import HtmlParser from 'react-html-parser'
 
 export async function getServerSideProps(context) {
 
-	const res = await fetch('https://chave-mestra.net/api/articles/index.php', {
+	const res = await fetch('https://main.chavemestra.net/api/articles/index.php', {
 		method: 'POST',
 		body: JSON.stringify({ 
 			token: process.env.API_KEY, 
@@ -19,7 +19,7 @@ export async function getServerSideProps(context) {
 
 	const article = await res.json()
 
-    const data = await fetch('https://chave-mestra.net/api/articles/index.php', {
+    const data = await fetch('https://main.chavemestra.net/api/articles/index.php', {
 		method: 'POST',
 		body: JSON.stringify({ 
 			token: process.env.API_KEY, 
