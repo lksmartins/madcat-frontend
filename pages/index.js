@@ -8,7 +8,6 @@ import SectionTitle from '../components/SectionTitle'
 import {trailerId} from '../lib/helper'
 
 export async function getServerSideProps() {
-
 	const res = await fetch('https://main.chavemestra.net/api/articles/index.php', {
 		method: 'POST',
 		body: JSON.stringify({ 
@@ -18,9 +17,10 @@ export async function getServerSideProps() {
             limit: 4
 		})
 	})
-
+    console.log(res.status, res.statusText)
 	const data = await res.json()
-	
+	console.log('Articles data on server:', data.articles);
+
 	return {
 		props: {
 			articles: data.articles
@@ -32,14 +32,14 @@ export default function Index(props) {
 
     // <div id="page-y-offset">0</div>
 
-	return (<div>
+	return (<div >
 
         <Menu />
         <Intro />
 
         <div className="container">
 
-            <Section className="section center" id="download">
+        <Section className="section center" id="download">
                 <p>
                     The final version of the game will be available for download soon.<br/>
                     For now you can check these links below:
@@ -59,7 +59,7 @@ export default function Index(props) {
                 <SectionTitle>Latest News</SectionTitle>
                 <News articles={props.articles} />
                 <div id="news-ver-mais">
-                    <Link href="/news"><a className="btn btn-sm"><i className="fas fa-newspaper"></i> Read More</a></Link>
+                    <Link href="/news"><span className="btn btn-sm"><i className="fas fa-newspaper"></i> Read More</span></Link>
                 </div>
             </Section>          
 
@@ -115,11 +115,11 @@ export default function Index(props) {
                 <div className="mb-6"></div>
 
                 <SectionTitle>About Us</SectionTitle>
-                <p className="links">
+                <div className="links">
                     <p>Madcat started as <a target="_blank" href="https://chavemestra.net">Chave-Mestra</a>, an Escape Room from Brazil. We fell in love with making games and from that we decided to expand and start making digital games.</p>
                     <p>We became partners with <a target="_blank" href="https://www.cavylabs.com/">Cavylabs</a>, <a target="_blank" href="https://amoraleite.com">Leonardo Amora Leite</a> and <a target="_blank" href="https://www.linkedin.com/in/fabricio-mazzotti-5b8457104/">Fabricio Mazzotti</a> to make our first game.</p>
                     <p>Hope you enjoy it.</p>
-                </p>
+                </div>
             </Section>
 
         </div>

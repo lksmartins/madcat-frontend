@@ -49,7 +49,7 @@ export default function Articles(props) {
             </Section>
 
 			<Section>
-				<Link href="/"><a className="btn btn-sm"><i class="fas fa-undo"></i> Back to Home</a></Link>
+				<Link href="/"><span className="btn btn-sm"><i class="fas fa-undo"></i> Back to Home</span></Link>
             </Section>
 
         </div>

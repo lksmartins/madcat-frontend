@@ -103,12 +103,12 @@ export default function Article(props) {
                                 <div className="article-element" key={index}>
                                     <div className="title">
                                         <Link href={`/news/${articleItem.slug}`}>
-                                            <a>{articleItem.title}</a>
+                                            <span>{articleItem.title}</span>
                                         </Link>
                                     </div>
                                     <div className="date">
                                         <Link href={`/news/${articleItem.slug}`}>
-                                            <a>{articleItem.formatted_date}</a>
+                                            <span>{articleItem.formatted_date}</span>
                                         </Link>
                                     </div>
                                 </div>
@@ -118,10 +118,10 @@ export default function Article(props) {
 
                     
                     <div style={{padding:'2rem 0'}}>
-                        <Link href="/"><a className="btn btn-sm" style={{fontSize:'0.85rem'}}><i class="fas fa-home"></i> Home</a></Link>
+                        <Link href="/"><span className="btn btn-sm" style={{fontSize:'0.85rem'}}><i class="fas fa-home"></i> Home</span></Link>
                     </div>
                     <div>
-                        <Link href="/news"><a className="btn btn-sm" style={{fontSize:'0.85rem'}}><i class="fas fa-undo"></i> News</a></Link>
+                        <Link href="/news"><span className="btn btn-sm" style={{fontSize:'0.85rem'}}><i class="fas fa-undo"></i> News</span></Link>
                     </div>
                     
                     
@@ -131,8 +131,8 @@ export default function Article(props) {
             </div>
             
             <Section className="section buttons">
-                <Link href="/"><a className="btn btn-sm"><i class="fas fa-undo"></i> Back to Home</a></Link>
-                <Link href="/news"><a className="btn btn-sm"><i class="fas fa-undo"></i> Back to News</a></Link>
+                <Link href="/"><span className="btn btn-sm"><i class="fas fa-undo"></i> Back to Home</span></Link>
+                <Link href="/news"><span className="btn btn-sm"><i class="fas fa-undo"></i> Back to News</span></Link>
             </Section>
 
         </div>

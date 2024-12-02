@@ -59,7 +59,7 @@ export default function Index(props) {
                 <SectionTitle>Latest News</SectionTitle>
                 <News articles={props.articles} />
                 <div id="news-ver-mais">
-                    <Link href="/news"><a className="btn btn-sm"><i className="fas fa-newspaper"></i> Read More</a></Link>
+                    <Link href="/news"><span className="btn btn-sm"><i className="fas fa-newspaper"></i> Read More</span></Link>
                 </div>
             </Section>          
 
