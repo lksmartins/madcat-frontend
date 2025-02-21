@@ -19,6 +19,6 @@
     "react-parallax": "^3.2.1"
   },
   "engines": {
-    "node": "21.x"
+    "node": "18.x"
   }
 }
