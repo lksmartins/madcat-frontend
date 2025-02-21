@@ -30,8 +30,6 @@ export async function getServerSideProps() {
 
 export default function Articles(props) {
 
-    console.log('articles', props.articles, props)
-
 	return (<div>
 
 		<Head>

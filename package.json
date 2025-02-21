@@ -13,10 +13,10 @@
     "postcss": "^8.4.49",
     "postcss-scss": "^4.0.9",
     "react": "^18.2.0",
-    "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-html-parser": "^2.0.2",
-    "react-parallax": "^3.2.1"
+    "react-parallax": "^3.2.1",
+    "sass": "^1.85.0"
   },
   "engines": {
     "node": "18.x"

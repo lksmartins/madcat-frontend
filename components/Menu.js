@@ -2,7 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { gameVersion } from '../lib/helper';
-import { isMobile } from 'react-device-detect';
+import styles from './styles/menu.module.scss';
+
 export default function Menu(props) {
 	const items = [
 		{
@@ -18,6 +19,22 @@ export default function Menu(props) {
 			link: '/#about',
 		},
 	];
+	function navigateOrScroll(url) {
+		if (url.includes('#')) {
+			const elementId = url.split('#')[1];
+			const targetElement = document.getElementById(elementId);
+
+			if (targetElement) {
+
+				targetElement.scrollIntoView({ behavior: 'smooth' });
+			}
+			if(url === "/#about" && !targetElement){
+				window.location.href = "/#about";
+			}
+		} else {
+			window.location.href = url;
+		}
+	}
 
 	return (
 		<div id="menu" className={props.className ? props.className : 'menu'}>
@@ -30,22 +47,19 @@ export default function Menu(props) {
 									href={gameVersion()}
 									download="MegaBattle-AlphaDemo.zip"
 								>
-									<Image
+									<img
 										quality="100"
 										src={`/assets/menu/${item.img}`}
-										width={isMobile ? '100' : '200'}
-										height={isMobile ? '100' : '200'}
 									/>
 								</a>
 							) : (
-								<Link href={item.link}>
-									<Image
+								<div className={styles.test} onClick={()=>navigateOrScroll(item.link)}>
+									<img
+										className={styles.image}
 										quality="100"
 										src={`/assets/menu/${item.img}`}
-										width={isMobile ? '100' : '200'}
-										height={isMobile ? '100' : '200'}
 									/>
-								</Link>
+								</div>
 							)}
 							<div className="text">
 								<Link href={item.link}>
