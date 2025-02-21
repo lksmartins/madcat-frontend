@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { gameVersion } from '../lib/helper';
-
+import { isMobile } from 'react-device-detect';
 export default function Menu(props) {
 	const items = [
 		{
@@ -33,8 +33,8 @@ export default function Menu(props) {
 									<Image
 										quality="100"
 										src={`/assets/menu/${item.img}`}
-										width="500"
-										height="500"
+										width={isMobile ? '100' : '200'}
+										height={isMobile ? '100' : '200'}
 									/>
 								</a>
 							) : (
@@ -42,8 +42,8 @@ export default function Menu(props) {
 									<Image
 										quality="100"
 										src={`/assets/menu/${item.img}`}
-										width="500"
-										height="500"
+										width={isMobile ? '100' : '200'}
+										height={isMobile ? '100' : '200'}
 									/>
 								</Link>
 							)}
