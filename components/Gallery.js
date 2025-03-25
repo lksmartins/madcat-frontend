@@ -3,14 +3,14 @@ import React, { useState } from 'react'
 export default function News(props){
 	
 	var images = props.images ? props.images : [
-		{thumb: '/assets/gallery/thumb/tela1.jpg', img: '/assets/gallery/tela1.png'},
-		{thumb: '/assets/gallery/thumb/tela2.jpg', img: '/assets/gallery/tela2.png'},
-		{thumb: '/assets/gallery/thumb/tela3.jpg', img: '/assets/gallery/tela3.png'},
-		{thumb: '/assets/gallery/thumb/tela4.jpg', img: '/assets/gallery/tela4.png'},
-		{thumb: '/assets/gallery/thumb/tela5.jpg', img: '/assets/gallery/tela5.png'},
-		{thumb: '/assets/gallery/thumb/tela6.jpg', img: '/assets/gallery/tela6.png'},
-		{thumb: '/assets/gallery/thumb/tela7.jpg', img: '/assets/gallery/tela7.png'},
-		{thumb: '/assets/gallery/thumb/tela8.jpg', img: '/assets/gallery/tela8.png'}
+		{thumb: '/assets/gallery/thumb/tela1.png', img: '/assets/gallery/tela1.png'},
+		{thumb: '/assets/gallery/thumb/tela2.png', img: '/assets/gallery/tela2.png'},
+		{thumb: '/assets/gallery/thumb/tela3.png', img: '/assets/gallery/tela3.png'},
+		{thumb: '/assets/gallery/thumb/tela4.png', img: '/assets/gallery/tela4.png'},
+		{thumb: '/assets/gallery/thumb/tela5.png', img: '/assets/gallery/tela5.png'},
+		{thumb: '/assets/gallery/thumb/tela6.png', img: '/assets/gallery/tela6.png'},
+		{thumb: '/assets/gallery/thumb/tela7.png', img: '/assets/gallery/tela7.png'},
+		{thumb: '/assets/gallery/thumb/tela8.png', img: '/assets/gallery/tela8.png'}
 	]
 
 	const [lightbox, setLightbox] = useState('hidden')

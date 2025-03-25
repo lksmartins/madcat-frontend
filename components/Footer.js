@@ -7,7 +7,8 @@ export default function Footer(props){
 
             <div className="col">
                 <div className="title">Contact Us</div>
-                <p>contact@madcatcorp.com</p>
+                <div className="title">kanan@chavemestra.net</div>
+                <p>Leonardo Kanan - Lead Game Designer</p>
             </div>
             
             <div className="col">

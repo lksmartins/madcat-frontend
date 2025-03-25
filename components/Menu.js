@@ -7,10 +7,11 @@ import styles from './styles/menu.module.scss';
 export default function Menu(props) {
 	const items = [
 		{
-			text: 'News',
+			text: 'Press-kit',
 			img: 'news.png',
 			className: 'menu-news',
-			link: '/news',
+			newTab: true,
+			link: 'https://impress.games/press-kit/cavylabs/megabattle',
 		},
 		{
 			text: 'About the Game',
@@ -19,19 +20,22 @@ export default function Menu(props) {
 			link: '/#about',
 		},
 	];
-	function navigateOrScroll(url) {
+	function navigateOrScroll(url, newTab) {
 		if (url.includes('#')) {
 			const elementId = url.split('#')[1];
 			const targetElement = document.getElementById(elementId);
 
 			if (targetElement) {
-
 				targetElement.scrollIntoView({ behavior: 'smooth' });
 			}
-			if(url === "/#about" && !targetElement){
-				window.location.href = "/#about";
+			if (url === '/#about' && !targetElement) {
+				window.location.href = '/#about';
 			}
 		} else {
+			if (newTab) {
+				window.open(url, '_blank');
+				return;
+			}
 			window.location.href = url;
 		}
 	}
@@ -53,7 +57,12 @@ export default function Menu(props) {
 									/>
 								</a>
 							) : (
-								<div className={styles.test} onClick={()=>navigateOrScroll(item.link)}>
+								<div
+									className={styles.test}
+									onClick={() =>
+										navigateOrScroll(item.link, item.newTab)
+									}
+								>
 									<img
 										className={styles.image}
 										quality="100"
