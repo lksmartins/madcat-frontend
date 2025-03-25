@@ -56,8 +56,6 @@ export default function Article(props) {
     const article = props.article
     const articles = props.articles
 
-    console.log(article)
-
 	return (<div>
 
         <Head>

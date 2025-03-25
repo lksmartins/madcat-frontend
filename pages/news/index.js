@@ -8,8 +8,6 @@ import SectionTitle from '../../components/SectionTitle'
 
 export async function getServerSideProps() {
 
-	console.log(process.env.API_KEY, process.env.GROUP_ID)
-
 	const res = await fetch('https://main.chavemestra.net/api/articles/index.php', {
 		method: 'POST',
 		body: JSON.stringify({ 

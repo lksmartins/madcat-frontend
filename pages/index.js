@@ -21,10 +21,7 @@ export async function getServerSideProps() {
 			}),
 		}
 	);
-	console.log(res.status, res.statusText);
 	const data = await res.json();
-	console.log('Articles data on server:', data.articles);
-
 	return {
 		props: {
 			articles: data.articles,

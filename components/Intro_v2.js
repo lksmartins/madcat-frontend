@@ -40,9 +40,6 @@ export default function Intro(props){
         var platform = navigator.platform.toLowerCase();
         var userAgent = navigator.userAgent.toLowerCase();
 
-        console.log(platform)
-        console.log(userAgent)
-    
         if( platform.indexOf('ipad') != -1  ||  platform.indexOf('iphone') != -1 ){
             //dispelParallax();
         }
