@@ -178,7 +178,7 @@ export default function Index(props) {
 						<div className={styles.row}>
 							{/* Instagram */}
 							<a
-								href="https://instagram.com/SEU_USUARIO"
+								href="https://instagram.com/madcatcorp"
 								target="_blank"
 								rel="noopener noreferrer"
 								className={styles.banner}
@@ -191,7 +191,7 @@ export default function Index(props) {
 
 							{/* X (Twitter) */}
 							<a
-								href="https://x.com/SEU_USUARIO"
+								href="https://x.com/playmegabattle"
 								target="_blank"
 								rel="noopener noreferrer"
 								className={styles.banner}
@@ -204,7 +204,7 @@ export default function Index(props) {
 
 							{/* TikTok */}
 							<a
-								href="https://tiktok.com/@SEU_USUARIO"
+								href="https://tiktok.com/@playmegabattle"
 								target="_blank"
 								rel="noopener noreferrer"
 								className={styles.banner}
