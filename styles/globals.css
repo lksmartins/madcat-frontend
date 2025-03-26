@@ -527,6 +527,9 @@ to {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 1rem #00f8ff;
+  gap: 2rem;
+  min-height: 20vh;
+
 }
 .footer .col {
   display: flex;
@@ -538,13 +541,19 @@ to {
   font-weight: bold;
 }
 .footer .col img {
-  max-width: 30vh;
+  display: none;
 }
 
 @media (max-width: 520px) {
   .footer {
     flex-direction: column;
     padding-top: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .footer .col img {
+    display: flex;
+    height: 10vh;
   }
 }
 html, body {

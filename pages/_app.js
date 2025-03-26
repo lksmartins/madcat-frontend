@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
       <div className="madcat-logo">
-          <img src="/assets/logo-color.png"/>
+          <img src="/assets/logo.png"/>
       </div>
       <Footer/>
     </div>

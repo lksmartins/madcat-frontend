@@ -12,7 +12,7 @@ export default function Footer(props){
             </div>
             
             <div className="col">
-                <img src="/assets/logo-color.png"/>
+                <img src="/assets/logo.png"/>
             </div>
 
         </div>

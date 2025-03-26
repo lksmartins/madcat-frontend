@@ -52,7 +52,57 @@ export default function Index(props) {
 						></iframe>
 					</div>
 				</Section>
+				<SectionTitle>Social Media</SectionTitle>
+				<div className={styles.wrapperLogos}>
+					{/* Discord */}
+					<a href="https://discord.gg/JJ4sWpAp3x" target="_blank">
+						<img
+							src="http://invidget.switchblade.xyz/JJ4sWpAp3x"
+							alt="Join us on Discord"
+						/>
+					</a>
 
+					<div className={styles.row}>
+						{/* Instagram */}
+						<a
+							href="https://instagram.com/madcatcorp"
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.banner}
+						>
+							<img
+								src="https://img.shields.io/badge/Instagram-Follow%20Us-E1306C?style=for-the-badge&logo=instagram&logoColor=white"
+								alt="Instagram"
+							/>
+						</a>
+
+						{/* X (Twitter) */}
+						<a
+							href="https://x.com/playmegabattle"
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.banner}
+						>
+							<img
+								src="https://img.shields.io/badge/X-Follow%20Us-000000?style=for-the-badge&logo=twitter&logoColor=white"
+								alt="X (Twitter)"
+							/>
+						</a>
+
+						{/* TikTok */}
+						<a
+							href="https://tiktok.com/@playmegabattle"
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.banner}
+						>
+							<img
+								src="https://img.shields.io/badge/TikTok-Follow%20Us-010101?style=for-the-badge&logo=tiktok&logoColor=white"
+								alt="TikTok"
+							/>
+						</a>
+					</div>
+				</div>
 				<Section className="section">
 					<div className="fluid-media">
 						<iframe
@@ -145,12 +195,6 @@ export default function Index(props) {
 						one with a card up the sleeve. You can be our hero. Are
 						you strong, brave and smart enough? We'll see it soon.
 					</p>
-					<h4>History</h4>
-					<p className="mb-6">
-						Since we're an indie developer, we want a history to our
-						game. This paragraph will explain this history in short.
-					</p>
-
 					<SectionTitle>Screenshots</SectionTitle>
 					<Gallery />
 					<div className="mb-6"></div>
@@ -164,57 +208,6 @@ export default function Index(props) {
 							forces due to good synergy and a shared interest of
 							creating roguelike card games.
 						</p>
-					</div>
-					<SectionTitle>Social Media</SectionTitle>
-					<div className={styles.wrapperLogos}>
-						{/* Discord */}
-						<a href="https://discord.gg/JJ4sWpAp3x" target="_blank">
-							<img
-								src="http://invidget.switchblade.xyz/JJ4sWpAp3x"
-								alt="Join us on Discord"
-							/>
-						</a>
-
-						<div className={styles.row}>
-							{/* Instagram */}
-							<a
-								href="https://instagram.com/madcatcorp"
-								target="_blank"
-								rel="noopener noreferrer"
-								className={styles.banner}
-							>
-								<img
-									src="https://img.shields.io/badge/Instagram-Follow%20Us-E1306C?style=for-the-badge&logo=instagram&logoColor=white"
-									alt="Instagram"
-								/>
-							</a>
-
-							{/* X (Twitter) */}
-							<a
-								href="https://x.com/playmegabattle"
-								target="_blank"
-								rel="noopener noreferrer"
-								className={styles.banner}
-							>
-								<img
-									src="https://img.shields.io/badge/X-Follow%20Us-000000?style=for-the-badge&logo=twitter&logoColor=white"
-									alt="X (Twitter)"
-								/>
-							</a>
-
-							{/* TikTok */}
-							<a
-								href="https://tiktok.com/@playmegabattle"
-								target="_blank"
-								rel="noopener noreferrer"
-								className={styles.banner}
-							>
-								<img
-									src="https://img.shields.io/badge/TikTok-Follow%20Us-010101?style=for-the-badge&logo=tiktok&logoColor=white"
-									alt="TikTok"
-								/>
-							</a>
-						</div>
 					</div>
 				</Section>
 			</div>
